@@ -1,5 +1,12 @@
 $(document).ready(function(){
-		
+	
+	$(".more").hide();
+	$("#interactivecar").hover( function() {
+			$(".more").show(300, "swing");
+		}, function () {
+			$(".more").hide(300, "swing");
+		}
+	);
 	//Blur Links (Prevents Outline)
 	$('a').click(function() {
 		this.blur();
