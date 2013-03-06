@@ -14,7 +14,7 @@ body {
 	margin-right: 5px;
 }
 
-.more {
+.button {
 	position:absolute;
 	background-color:grey;
 	color:white;
@@ -28,7 +28,7 @@ body {
 	cursor: -webkit-grab;
 }
 
-.post:nth-child(2n) .more{
+.post:nth-child(2n) .button{
 	left: 0px;
 	right: initial;
 }
