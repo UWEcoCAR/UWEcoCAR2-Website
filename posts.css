@@ -1,6 +1,17 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
 .post, .picture, .text {
 	height: 300px;
 	position:relative;
+}
+
+.title {
+	margin: 0px;
+	float: left;
+	margin-right: 5px;
 }
 
 .more {
@@ -14,6 +25,7 @@
 	left: initial;
 	bottom: 0px;
 	margin: 5px;
+	cursor: -webkit-grab;
 }
 
 .post:nth-child(2n) .more{
@@ -64,11 +76,13 @@
 }
 
 @-webkit-keyframes slideleft {
-	0% {left: 110%;}
+	0% {left: 110%; opacity: 0;}
+	50% {opacity: 1;}
 	100% {left: 0%;}
 }
 
 @-webkit-keyframes slideright {
-	0% {right: 110%;}
+	0% {right: 110%; opacity: 0;}
+	50% {opacity: 1;}
 	100% {right:0%;}
 }

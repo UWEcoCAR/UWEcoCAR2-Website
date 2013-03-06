@@ -4,13 +4,24 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 	this.index = startingIndex;
 	this.data = posts;
 	this.parent = container;
-	this.isLoading = false;
-	this.isAtEnd = this.index < posts.length;
 	this.postClass = postClass;
 	this.template = template;
 
-	this.templateLoad = function(n) {
-		for (var i = this.index; i - this.index < n && i < this.data.length; i++){
+	this.mask = document.createElement('div');
+		this.mask.id = 'mask';
+		$(this.mask).hide().click(function(){postLoader.setPost(false)})
+	this.parent.appendChild(this.mask);
+
+	this.post = new Post(this.parent);
+
+	this.isLoading = false;
+	this.isAtEnd = this.index < posts.length;
+
+
+
+	this.load = function(n) {
+		var i = this.index;
+		while (i - this.index < n && i < this.data.length){
 			var post = document.createElement('div');
 				post.classList.add(this.postClass);
 				var a = this.template;
@@ -18,48 +29,65 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 					a = a.substring(0, a.indexOf('{')) + eval('this.data[' + i + '].' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
 				}
 				post.innerHTML = a;
+
+				more = post.getElementsByClassName('more')[0]
+				more.index = i;
+				more.scope = this;
+				more.addEventListener('click', this.onClick);
 			this.parent.appendChild(post);
+			i++;
 		}
 		this.index += n;
 		this.isAtEnd = this.index < posts.length;
 		this.isLoading = false;
 	}
 
-	this.load = function(n) {
-		this.isLoading = true;
-		for (var i = this.index; i - this.index < n && i < this.data.length; i++){
-			var post = document.createElement('div');
-			post.classList.add('post');
+	this.onClick = function(e) {
+		var me = e.target.scope;
+		var index = e.target.index;
+		me.setPost(me.data[index]);
+	}
 
-				var picture = document.createElement('div');
-				picture.classList.add('picture');
-				picture.style.backgroundImage = 'url(' + this.data[i].image + ')';
-			post.appendChild(picture);
-
-				var text = document.createElement('div');
-				text.classList.add('text');
-				text.innerHTML = this.data[i].subtext;
-					var button = document.createElement('div');
-					button.classList.add('more');
-					button.innerHTML = 'Read More...';
-				text.appendChild(button);
-			post.appendChild(text);
-		this.parent.appendChild(post);
+	this.setPost = function(data){
+		if (data){
+			$('#mask').show();
+			$('body').css('overflow', 'hidden');
+			this.post.load(data);
+			$(this.post.object).show();
+		} else {
+			$('#mask').hide();
+			$('body').css('overflow', 'scroll');
+			$(this.post.object).hide();
 		}
-		this.index += n;
-		this.isAtEnd = this.index < posts.length;
-		this.isLoading = false;
+	}
+}
+
+function Post(container){
+	this.template = '<div id="openedPostImage" style="background-image: url({image})"></div><div id="openedPostText">{text}</div>'
+
+	this.object = document.createElement('div');
+		this.object.id = 'openedPost';
+		$(this.object).hide();
+		container.appendChild(this.object);
+
+	this.load = function(data) {
+		var a = this.template;
+		while(a.indexOf('{') > 0){
+			a = a.substring(0, a.indexOf('{')) + eval('data.' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
+		}
+		this.object.innerHTML = a;
 	}
 }
 
 window.onload = function() {
-	var postsContainer = document.getElementById('posts');
+	var postsContainer = $('#posts')[0];
 	var posts = getPosts();
-	var template = '<div class="picture" style="background-image: url({image});"></div><div class="text">{subtext}<div class="more">Read More...</div></div>'
-	postLoader = new PostLoader(0, posts, postsContainer, 'post', template);
-	postLoader.templateLoad(4);
+	var postTemplate = '<div class="picture" style="background-image: url({image});"></div><div class="text"><h1 class="title">{title}</h1>{subtext}<div class="more" index="{title}">Read More...</div></div>';
+	postLoader = new PostLoader(0, posts, postsContainer, 'post', postTemplate);
+	postLoader.load(2);
 
 	document.addEventListener('scroll', onScroll);
+
 }
 
 function getPosts(){
@@ -72,6 +100,6 @@ function getPosts(){
 function onScroll(event){
 	var scrolled = window.scrollY/(document.height-window.innerHeight);
 	if (scrolled > .98 && !postLoader.isLoading){
-		postLoader.templateLoad(1);
+		postLoader.load(1);
 	}
 }
