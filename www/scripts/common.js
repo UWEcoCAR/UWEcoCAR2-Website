@@ -1,3 +1,10 @@
+require(["jquery"], doStuff);
+
+function doStuff(){
+$.get("headerFooter.html", function(result) {
+        $("body").prepend(result);
+});
+
 window.addEventListener("scroll", function() {
 	var tabBar = $("#tabBar");
 	if (document.body.scrollTop > 100) {
@@ -8,3 +15,4 @@ window.addEventListener("scroll", function() {
 		tabBar.css("top", "100px");
 	}
 });
+}
