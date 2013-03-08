@@ -9,7 +9,7 @@ body {
   overflow: hidden;
   width: 1120px;
   background-color: white;
-  box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 8px #888888;
 } 
 
 .post, .picture, .text {
