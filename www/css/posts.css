@@ -12,9 +12,9 @@ body {
   box-shadow: 0 0 8px #888888;
 } 
 
-.post, .picture, .text {
+.post {
 	min-height: 300px;
-	position:relative;
+  overflow: hidden;
 }
 
 .title {
@@ -37,6 +37,7 @@ body {
 }
 
 .post {
+    overflow: hidden;
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
 	-webkit-animation: fadein 1.5s;
