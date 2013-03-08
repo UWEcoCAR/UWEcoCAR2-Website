@@ -1,0 +1,17 @@
+.tier {
+	margin: 50px;
+	padding: 10px;
+	background: url(../images/divider.jpg) 0 0 no-repeat;
+	-webkit-animation: fadein 4s;
+
+}
+
+.logo {
+	max-width: 200px;
+	max-height: 90px;
+	margin: 20px;
+}
+
+img[src="undefined"] {
+	display: none;
+}

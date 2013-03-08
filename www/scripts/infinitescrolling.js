@@ -25,9 +25,11 @@ function PostLoader(postFile, container, template, mainClass) {
 				post.innerHTML = a;
 
 				more = post.getElementsByClassName('more')[0]
-				more.index = i;
-				more.scope = this;
-				more.addEventListener('click', this.onClick);
+				if (more){
+					more.index = i;
+					more.scope = this;
+					more.addEventListener('click', this.onClick);
+				}
 			this.parent.append(post);
 			i++;
 		}
