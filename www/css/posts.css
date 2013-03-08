@@ -39,11 +39,7 @@ body {
 .post {
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
-	-webkit-animation: slideleft 1s;
-}
-
-.post:nth-child(2n){
-	-webkit-animation: slideright 1s;
+	-webkit-animation: fadein 1.5s;
 }
 
 .picture {
@@ -75,12 +71,7 @@ body {
 .post:nth-child(2n) .text {
 }
 
-@-webkit-keyframes slideleft {
-	0% {opacity: .2;}
+@-webkit-keyframes fadein {
+	0% {opacity: .0;}
     100% {opacity: 1;}
-}
-
-@-webkit-keyframes slideright {
-	0% {opacity: .2;}
-	100% {opacity: 1;}
 }
