@@ -1,18 +1,17 @@
 var postLoader;
 
-function PostLoader(startingIndex, posts, container, postClass, template) {
-	this.index = startingIndex;
-	this.data = posts;
+function PostLoader(postFile, container, template) {
+	this.index = 0;
+	this.data = getPosts(postFile);
 	this.parent = container;
-	this.postClass = postClass;
 	this.template = template;
 
-	this.mask = document.createElement('div');
-		this.mask.id = 'mask';
-		$(this.mask).hide().click(function(){postLoader.setPost(false)})
-	this.parent.appendChild(this.mask);
+//	this.mask = document.createElement('div');
+//		this.mask.id = 'mask';
+//		$(this.mask).hide().click(function(){postLoader.setPost(false)})
+//	this.parent.appendChild(this.mask);
 
-	this.post = new Post(this.parent);
+//	this.post = new Post(this.parent);
 
 	this.isLoading = false;
 	this.isAtEnd = this.index < posts.length;
@@ -23,7 +22,7 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 		var i = this.index;
 		while (i - this.index < n && i < this.data.length){
 			var post = document.createElement('div');
-				post.classList.add(this.postClass);
+				post.classList.add('post');
 				var a = this.template;
 				while(a.indexOf('{') > 0){
 					a = a.substring(0, a.indexOf('{')) + eval('this.data[' + i + '].' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
@@ -34,7 +33,7 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 				more.index = i;
 				more.scope = this;
 				more.addEventListener('click', this.onClick);
-			this.parent.appendChild(post);
+			this.parent.append(post);
 			i++;
 		}
 		this.index += n;
@@ -53,56 +52,55 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 		//me.setPost(me.data[index]);
 	}
 
-	this.setPost = function(data){
-		if (data){
-			$('#mask').show();
-			this.post.load(data);
-			$(this.post.object).show();
-		} else {
-			$('#mask').hide();
-			$(this.post.object).hide();
-		}
-	}
+//	this.setPost = function(data){
+//		if (data){
+//			$('#mask').show();
+//			this.post.load(data);
+//			$(this.post.object).show();
+//		} else {
+//			$('#mask').hide();
+//			$(this.post.object).hide();
+//		}
+//	}
 }
 
-function Post(container){
-	this.template = '<div id="openedPost"><div id="openedPostImage" style="background-image: url({image})"></div><div id="openedPostText">{text}</div></div>'
+//function Post(container){
+//	this.template = '<div id="openedPost"><div id="openedPostImage" style="background-image: url({image})"></div><div id="openedPostText">{text}</div></div>'
+//
+//	this.object = document.createElement('div');
+//		this.object.id = 'openedPostContainer';
+//		$(this.object).hide();
+//		container.appendChild(this.object);
+//
+//	this.load = function(data) {
+//		var a = this.template;
+//		while(a.indexOf('{') > 0){
+//			a = a.substring(0, a.indexOf('{')) + eval('data.' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
+//		}
+//		this.object.innerHTML = a;
+//	}
+//}
 
-	this.object = document.createElement('div');
-		this.object.id = 'openedPostContainer';
-		$(this.object).hide();
-		container.appendChild(this.object);
-
-	this.load = function(data) {
-		var a = this.template;
-		while(a.indexOf('{') > 0){
-			a = a.substring(0, a.indexOf('{')) + eval('data.' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
-		}
-		this.object.innerHTML = a;
-	}
-}
-
-window.onload = function() {
-	var postsContainer = $('#posts')[0];
-	var posts = getPosts();
-	var postTemplate = '<div class="picture" style="background-image: url({image});"></div><div class="text"><h1 class="title">{title}</h1><h2 class="title">{subTitle}</h2><p>{subtext}</p><a href="#test" class="more" index="{title}">Read More...</a></div>';
-	postLoader = new PostLoader(0, posts, postsContainer, 'post', postTemplate);
-	postLoader.load(2);
-
-	document.addEventListener('scroll', onScroll);
-
-}
-
-function getPosts(){
+function getPosts(postFile){
 	var	request = new XMLHttpRequest();
-	request.open('GET', 'homePosts.json', false);
+	request.open('GET', postFile, false);
 	request.send();
 	return JSON.parse(request.response).posts;
 }
 
-function onScroll(event){
+$(document).scroll(function(event){
 	var scrolled = window.scrollY/(document.height-window.innerHeight);
 	if (scrolled > .98 && !postLoader.isLoading){
 		postLoader.load(1);
 	}
-}
+});
+
+$("<link/>").attr({
+	href: "css/posts.css",
+	rel: "stylesheet"
+}).appendTo("head");
+
+$("<link/>").attr({
+	href: "css/post-open.css",
+	rel: "stylesheet"
+}).appendTo("head");

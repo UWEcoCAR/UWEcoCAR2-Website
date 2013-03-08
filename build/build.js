@@ -8,7 +8,7 @@
     modules: [
         {
             name: "common",
-            name: "infinitescrolling"
+            name: "home"
         }
     ]
 })
