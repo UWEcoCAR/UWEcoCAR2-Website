@@ -1,0 +1,86 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #eee;'
+}
+
+#posts {
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+  width: 1120px;
+  background-color: white;
+  box-shadow: 0 0 10px #888888;
+} 
+
+.post, .picture, .text {
+	min-height: 300px;
+	position:relative;
+}
+
+.title {
+	margin: 0px;
+	margin-right: 5px;
+}
+
+.more {
+	color: #08c;
+	text-decoration: none;
+}
+
+.more:hover {
+    color: #0be;
+}
+
+.post:nth-child(2n) .more{
+	left: 0px;
+	right: initial;
+}
+
+.post {
+    background: url(../images/divider.jpg) 0 0 no-repeat;
+    padding: 60px;
+	-webkit-animation: slideleft 1s;
+}
+
+.post:nth-child(2n){
+	-webkit-animation: slideright 1s;
+}
+
+.picture {
+	width: 50%;
+	background-size: cover;
+	float:left;
+	border: 5px solid white;
+    box-shadow: 2px 2px 15px #888;
+    margin: 0 40px 40px 0;
+    /*
+    -webkit-transform: rotate(2deg);
+    -webkit-backface-visibility: hidden;
+    */
+}
+
+.post:nth-child(2n) .picture {
+	float:right;
+    margin: 0 0 40px 40px;
+}
+
+.text {
+	width: 40%;
+	font-size:10pt;
+	overflow:hidden;
+	display: inline;
+	
+}
+
+.post:nth-child(2n) .text {
+}
+
+@-webkit-keyframes slideleft {
+	0% {opacity: .2;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes slideright {
+	0% {opacity: .2;}
+	100% {opacity: 1;}
+}

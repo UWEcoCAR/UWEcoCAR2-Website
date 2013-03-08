@@ -50,6 +50,7 @@ body {
   width: 100%;
   bottom: 0;
   background-color: #2d2d2d;
+  z-index: 999;
 }
 
 #footer img {

@@ -7,7 +7,8 @@
     },
     modules: [
         {
-            name: "common"
+            name: "common",
+            name: "infinitescrolling"
         }
     ]
 })
