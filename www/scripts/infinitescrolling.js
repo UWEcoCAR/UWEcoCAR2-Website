@@ -95,7 +95,7 @@ window.onload = function() {
 
 function getPosts(){
 	var	request = new XMLHttpRequest();
-	request.open('GET', 'posts.json', false);
+	request.open('GET', 'homePosts.json', false);
 	request.send();
 	return JSON.parse(request.response).posts;
 }
