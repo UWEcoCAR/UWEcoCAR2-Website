@@ -45,28 +45,31 @@ function PostLoader(startingIndex, posts, container, postClass, template) {
 	this.onClick = function(e) {
 		var me = e.target.scope;
 		var index = e.target.index;
-		me.setPost(me.data[index]);
+		$("<p>" + me.data[index].text + "</p>").appendTo($(this).parent());
+//		$('<a href="#test" class="more">Read Less...</a>').click(function() {
+//			
+//		}).appendTo($(this).parent());
+		$(this).remove();
+		//me.setPost(me.data[index]);
 	}
 
 	this.setPost = function(data){
 		if (data){
 			$('#mask').show();
-			$('body').css('overflow', 'hidden');
 			this.post.load(data);
 			$(this.post.object).show();
 		} else {
 			$('#mask').hide();
-			$('body').css('overflow', 'scroll');
 			$(this.post.object).hide();
 		}
 	}
 }
 
 function Post(container){
-	this.template = '<div id="openedPostImage" style="background-image: url({image})"></div><div id="openedPostText">{text}</div>'
+	this.template = '<div id="openedPost"><div id="openedPostImage" style="background-image: url({image})"></div><div id="openedPostText">{text}</div></div>'
 
 	this.object = document.createElement('div');
-		this.object.id = 'openedPost';
+		this.object.id = 'openedPostContainer';
 		$(this.object).hide();
 		container.appendChild(this.object);
 
@@ -82,7 +85,7 @@ function Post(container){
 window.onload = function() {
 	var postsContainer = $('#posts')[0];
 	var posts = getPosts();
-	var postTemplate = '<div class="picture" style="background-image: url({image});"></div><div class="text"><h1 class="title">{title}</h1>{subtext}<div class="more" index="{title}">Read More...</div></div>';
+	var postTemplate = '<div class="picture" style="background-image: url({image});"></div><div class="text"><h1 class="title">{title}</h1><h2 class="title">{subTitle}</h2><p>{subtext}</p><a href="#test" class="more" index="{title}">Read More...</a></div>';
 	postLoader = new PostLoader(0, posts, postsContainer, 'post', postTemplate);
 	postLoader.load(2);
 
