@@ -1,5 +1,5 @@
 .tier {
-	margin: 50px;
+	margin: 0px 50px 50px 50px;
 	padding: 10px;
 	background: url(../images/divider.jpg) 0 0 no-repeat;
 	background-size: contain;
@@ -36,4 +36,8 @@
 
 img[src="undefined"] {
 	display: none;
+}
+
+#main {
+	text-align: center;
 }
