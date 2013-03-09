@@ -39,7 +39,7 @@ body {
 .post {
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
-	-webkit-animation: fadein 1.5s;
+	-webkit-animation: fadeup 1.5s;
 }
 
 .picture {
@@ -71,7 +71,7 @@ body {
 .post:nth-child(2n) .text {
 }
 
-@-webkit-keyframes fadein {
-	0% {opacity: .0;}
-    100% {opacity: 1;}
+@-webkit-keyframes fadeup {
+	0% {opacity: .0; bottom: -200px;}
+    100% {opacity: 1; bottom: 0px;}
 }

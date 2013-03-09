@@ -4,10 +4,10 @@ require(["jquery", "infinitescrolling"], function() {
 		rel: 'stylesheet'
 	}).appendTo("head");
 
-	var postTemplate = '<h1>{tier}</h1>';
+	var postTemplate = '<h1>{tier}</h1><h3 class="{scope}">{scope} sponsors</h3>';
 	for (var i = 1; i <= 14; i++) {
-		postTemplate += '<a href="{url' + i +'}"><img class="logo" src="{image' + i + '}" alt="{title' + i + '}" /></a>'
+		postTemplate += '<a href="{url' + i +'}"><img class="logo {tier}" src="{image' + i + '}" alt="{title' + i + '}" /></a>'
 	}
-	postLoader = new PostLoader('test.json', $('#posts'), postTemplate, 'tier');
+	postLoader = new PostLoader('sponsorPosts.json', $('#posts'), postTemplate, 'tier');
 	postLoader.load(3);
 });
