@@ -22,9 +22,14 @@
 }
 
 #main img {
-  -webkit-transform: rotate(2deg);
+  -webkit-transform: rotate(-2deg);
   -webkit-backface-visibility: hidden;
   margin-top: 40px;
-    border: 10px solid white;
-    box-shadow: 2px 2px 15px #888;
+  border: 10px solid white;
+  box-shadow: 2px 2px 15px #888;
+}
+
+#main h2 {
+  width: 70%;
+  margin: -20px auto 30px auto;
 }

@@ -1,9 +1,3 @@
-body {
-	padding: 0px;
-	margin: 0px;
-	background-color: #eee;'
-}
-
 #posts {
   margin: 0 auto 0 auto;
   overflow: hidden;
@@ -29,6 +23,7 @@ body {
 
 .more:hover {
     color: #0be;
+    cursor: pointer;
 }
 
 .post:nth-child(2n) .more{
