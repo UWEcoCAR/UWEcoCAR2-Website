@@ -22,11 +22,13 @@ function PostLoader(postFile, container, template, mainClass) {
 				}
 				var post = $("<div>").addClass(this.class).html(a);
 
-				var more = post.children('.more');
+				var more = post.find('.more');
+				var me = this;
 				if (more){
-					more.index = i;
-					more.scope = this;
-					more.click(this.onClick);
+					more.click(function() {
+						$("<p>" + me.data[i].text + "</p>").appendTo($(this).parent());
+						$(this).remove();
+					});
 				}
 			this.parent.append(post);
 			i++;
@@ -34,13 +36,6 @@ function PostLoader(postFile, container, template, mainClass) {
 		this.index += n;
 		this.isAtEnd = this.index < posts.length;
 		this.isLoading = false;
-	}
-
-	this.onClick = function(e) {
-		var me = e.target.scope;
-		var index = e.target.index;
-		$("<p>" + me.data[index].text + "</p>").appendTo($(this).parent());
-		$(this).remove();
 	}
 }
 
