@@ -23,10 +23,10 @@ function PostLoader(postFile, container, template, mainClass) {
 				var post = $("<div>").addClass(this.class).html(a);
 
 				var more = post.find('.more');
-				var me = this;
-				if (more){
+				if (more && more.size()){
+					$.data(more[0], "more", this.data[i].text);
 					more.click(function() {
-						$("<p>" + me.data[i].text + "</p>").appendTo($(this).parent());
+						$("<p>" + $.data(this, "more") + "</p>").appendTo($(this).parent());
 						$(this).remove();
 					});
 				}

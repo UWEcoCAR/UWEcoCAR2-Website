@@ -1,0 +1,42 @@
+/* Defines the boundaries of the car and displays the image */
+#interactivecar {
+	width:700px;
+	height: 500px;
+	margin:0px auto;
+	overflow: hidden;
+	background: url('../images/interactivecar/car-small.jpg');
+}
+
+/* Detailed images displayed on hover over part of the car */
+.interactivecarBattery {
+	background: url('../images/interactivecar/car-battery.jpg');
+}
+
+.interactivecarEngine {
+	background: url('../images/interactivecar/car-engine.jpg');
+}
+
+/* Positions the detail images in the upper right corner */
+#moreInfo {
+	width: 700px;
+	height: 500px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#images {
+	position: relative;
+	top: -500px;
+	left: 0px;
+}
+
+/* See through image map */
+#blankImage {
+	opacity: .0;
+}
+
+#carMap {
+	width: 700px;
+	height: 500px;
+}
