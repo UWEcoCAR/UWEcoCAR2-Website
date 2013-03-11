@@ -3,8 +3,21 @@
         <title>UW EcoCAR 2</title>
         <script data-main="scripts/common.js" src="scripts/require-jquery.js"></script>
         <script src="scripts/home.js"></script>
+        <link type="text/css" href="css/interactivecar.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="posts"></div>
+        <div id="posts">
+			<div id="interactivecar">
+				<div id="moreInfo" class="cornerImageNone">
+            	</div>
+            	<div id="images">
+		            <img src="images/interactivecar/blank.gif" usemap="carMap" id="blankImage"/>
+					<map name="carMap">
+		                <area shape="polygon" coords="239,137,124,175,180,203,291,172,245,143" href="#" id="batteryMap" />          
+		                <area shape="polygon" coords="505,274,453,288,438,325,456,365,520,356,524,311,509,281" href="#" id="engineMap" />
+		            </map>
+		        </div>
+	        </div>
+        </div>
     </body>
 </html>

@@ -1,28 +1,19 @@
-/* General Styles */
-*{ padding:0px; margin:0px; }
-img{ border: none; }
-a:focus, a:active{ outline:none; }
-body{ text-align:center; background:#111; }
-h1{ font:bold 18px Helvetica, Arial, sans-sarif; color:#FFF; margin:20px 0 0 0; }
-
-
-
 /* Defines the boundaries of the car and displays the image */
 #interactivecar {
 	width:700px;
 	height: 500px;
 	margin:0px auto;
 	overflow: hidden;
-	background: url('images/car-small.jpg');
+	background: url('../images/interactivecar/car-small.jpg');
 }
 
 /* Detailed images displayed on hover over part of the car */
 .interactivecarBattery {
-	background: url('images/car-battery.jpg');
+	background: url('../images/interactivecar/car-battery.jpg');
 }
 
 .interactivecarEngine {
-	background: url('images/car-engine.jpg');
+	background: url('../images/interactivecar/car-engine.jpg');
 }
 
 /* Positions the detail images in the upper right corner */
@@ -43,11 +34,6 @@ h1{ font:bold 18px Helvetica, Arial, sans-sarif; color:#FFF; margin:20px 0 0 0; 
 /* See through image map */
 #blankImage {
 	opacity: .0;
-}
-
-#carContainer {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #carMap {
