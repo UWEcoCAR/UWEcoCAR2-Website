@@ -2,8 +2,8 @@
 	"posts" : [
     {
       "tier" : "Platinum",
-      "scope" : "team",
-      "image1" : "http://students.washington.edu/mohsens/index_files/4C_FosterLogo_RGB.jpg",
+      "scope" : "Team",
+      "image1" : "images/sponsorLogos/foster.png",
       "url1" : "http://www.foster.washington.edu/Pages/home.aspx",
       "title1" : "Foster School of Business",
       "image2" : "http://www.nsf.gov/images/nsf_logo.png",
@@ -15,8 +15,8 @@
     },
     {
       "tier" : "Purple",
-      "scope" : "team",
-      "image1" : "http://www.rinehartmotion.com/files/rms4.gif",
+      "scope" : "Team",
+      "image1" : "images/sponsorLogos/rms.png",
       "url1" : "http://www.rinehartmotion.com/",
       "title1" : "Reinhart Motion Systems",
       "image2" : "",
@@ -31,8 +31,8 @@
     },
     {
       "tier" : "Green",
-      "scope" : "team",
-      "image1" : "http://www.boeing.com/images/logo.jpg",
+      "scope" : "Team",
+      "image1" : "images/sponsorLogos/boeing.png",
       "url1" : "http://www.boeing.com/",
       "title1" : "Boeing"
     },
