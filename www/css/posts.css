@@ -1,9 +1,3 @@
-body {
-	padding: 0px;
-	margin: 0px;
-	background-color: #eee;'
-}
-
 #posts {
   margin: 0 auto 0 auto;
   overflow: hidden;
@@ -12,9 +6,9 @@ body {
   box-shadow: 0 0 8px #888888;
 } 
 
-.post, .picture, .text {
+.post {
 	min-height: 300px;
-	position:relative;
+  overflow: hidden;
 }
 
 .title {
@@ -29,6 +23,7 @@ body {
 
 .more:hover {
     color: #0be;
+    cursor: pointer;
 }
 
 .post:nth-child(2n) .more{
@@ -37,6 +32,7 @@ body {
 }
 
 .post {
+    overflow: hidden;
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
 	-webkit-animation: fadeup 1.5s;

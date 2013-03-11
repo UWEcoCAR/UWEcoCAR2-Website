@@ -8,7 +8,8 @@
     modules: [
         {
             name: "common",
-            name: "home"
+            name: "home",
+            name: "team"
         }
     ]
 })
