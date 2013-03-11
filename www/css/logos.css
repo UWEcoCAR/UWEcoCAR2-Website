@@ -4,9 +4,25 @@
 }
 
 .logo {
-	margin: 20px;
+	padding: 18px;
 	max-width: 300px;
 	max-height: 70px;
+}
+
+.logo:hover {
+    background: #eee;
+    border: 1px solid #e2e2e2;
+    padding: 17px;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    border-radius: 0.4em;
+    -webkit-box-shadow: inset 0px 0px 10px #e2e2e2;
+    -moz-box-shadow: inset 0px 0px 10px #e2e2e2;
+    -o-box-shadow: inset 0px 0px 10px #e2e2e2;
+    -ms-box-shadow: inset 0px 0px 10px #e2e2e2;
+    box-shadow: inset 0px 0px 10px #e2e2e2;
 }
 
 .tier h1 {
@@ -16,18 +32,16 @@
 
 .tier h3 {
 	margin: 0px;
-	margin-top: -10px;
-	margin-left: 40px;
-	opacity: .3;
+	opacity: .8;
 	font-size: 10pt;
 }
 
 .team {
-	color: purple;
+	color: #5e3996;
 }
 
 .competition {
-	color: green;
+	color: #85c660;
 }
 
 img[src="undefined"] {

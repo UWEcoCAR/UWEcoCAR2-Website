@@ -72,6 +72,6 @@ body {
 }
 
 @-webkit-keyframes fadeup {
-	0% {opacity: .0; bottom: -200px;}
+	0% {opacity: .0; bottom: -50px;}
     100% {opacity: 1; bottom: 0px;}
 }

@@ -38,7 +38,7 @@
     },
 		{
 			"tier" : "Headline",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/usde.png",
 			"url1" : "http://www.eere.energy.gov/vehiclesandfuels",
 			"title1" : "US Department Of Energy",
@@ -48,7 +48,7 @@
 		}, 
 		{
 			"tier" : "Diamond",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/canada.png",
 			"url1" : "http://www.nrcan.gc.ca/",
 			"title1" : "Natural Resources Canada",
@@ -64,7 +64,7 @@
 		}, 
 		{
 			"tier" : "Platinum",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/dspace.png",
 			"url1" : "http://www.dspaceinc.com/",
 			"title1" : "dSPACE",
@@ -83,7 +83,7 @@
 		},
 		{
 			"tier" : "Gold",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/etas.png",
 			"url1" : "",
 			"title1" : "",
@@ -93,7 +93,7 @@
 		},
 		{
 			"tier" : "Silver",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/magna.png",
 			"url1" : "",
 			"title1" : "",
@@ -109,7 +109,7 @@
 		},
 		{
 			"tier" : "Bronze",
-      "scope" : "competition",
+            "scope" : "Competition",
 			"image1" : "http://www.ecocar2.org/css/images/sponsors/cdadapco.png",
 			"url1" : "",
 			"title1" : "",
