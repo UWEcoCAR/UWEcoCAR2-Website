@@ -5,6 +5,9 @@ a:focus, a:active{ outline:none; }
 body{ text-align:center; background:#111; }
 h1{ font:bold 18px Helvetica, Arial, sans-sarif; color:#FFF; margin:20px 0 0 0; }
 
+
+
+/* Defines the boundaries of the car and displays the image */
 #interactivecar {
 	width:700px;
 	height: 500px;
@@ -13,30 +16,38 @@ h1{ font:bold 18px Helvetica, Arial, sans-sarif; color:#FFF; margin:20px 0 0 0; 
 	background: url('images/car-small.jpg');
 }
 
+/* Detailed images displayed on hover over part of the car */
 .interactivecarBattery {
-	background: url('images/battery.jpg');
+	background: url('images/car-battery.jpg');
 }
 
 .interactivecarEngine {
-	background: url('images/engine.jpg');
+	background: url('images/car-engine.jpg');
 }
 
-
+/* Positions the detail images in the upper right corner */
 #moreInfo {
-	width: 250px;
-	height: 150px;
+	width: 700px;
+	height: 500px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#images {
 	position: relative;
 	top: -500px;
-	left: 450px;
+	left: 0px;
+}
+
+/* See through image map */
+#blankImage {
+	opacity: .0;
 }
 
 #carContainer {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#blankImage {
-	opacity: .5;
 }
 
 #carMap {
