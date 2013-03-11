@@ -24,11 +24,15 @@ function PostLoader(postFile, container, template, mainClass) {
 
                 var more = post.find('.more');
                 if (more && more.size()){
-                    $.data(more[0], "more", this.data[i].text);
-                    more.click(function() {
-                        $("<p>" + $.data(this, "more") + "</p>").appendTo($(this).parent());
-                        $(this).remove();
-                    });
+                    if (!this.data[i].text){
+                        more.hide();
+                    } else {
+                        $.data(more[0], "more", this.data[i].text);
+                        more.click(function() {
+                            $("<p>" + $.data(this, "more") + "</p>").appendTo($(this).parent());
+                            $(this).remove();
+                        });
+                    }
                 }
             this.parent.append(post);
             i++;
