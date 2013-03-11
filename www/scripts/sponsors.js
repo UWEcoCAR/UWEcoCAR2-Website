@@ -1,6 +1,6 @@
 require(["jquery", "infinitescrolling"], function() {
 	$("<link/>").attr({
-		href: "css/logos.css",
+		href: "css/sponsors.css",
 		rel: 'stylesheet'
 	}).appendTo("head");
 

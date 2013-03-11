@@ -1,6 +1,7 @@
 .tier {
-  background-position-y: 110px;
+  background-position-y: 90px;
   min-height: 0px;
+  padding: 40px 60px 40px 60px;
 }
 
 .logo {
@@ -49,5 +50,18 @@ img[src="undefined"] {
 }
 
 #main {
-	text-align: center;
+	padding: 60px;
+}
+
+#mainImage {
+  -webkit-transform: rotate(-2deg);
+  -webkit-backface-visibility: hidden;
+  margin: 0 50px 10px 0;
+  float: left;
+}
+
+#mainImage h3 {
+  margin: 5px;
+  font-size: 80%;
+  text-align: center;
 }
