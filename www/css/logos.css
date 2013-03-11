@@ -1,10 +1,6 @@
 .tier {
-	margin: 0px 50px 50px 50px;
-	padding: 10px;
-	background: url(../images/divider.jpg) 0 0 no-repeat;
-	background-size: contain;
-	-webkit-animation: fadeup 1s;
-	position: relative;
+  background-position-y: 110px;
+  min-height: 0px;
 }
 
 .logo {

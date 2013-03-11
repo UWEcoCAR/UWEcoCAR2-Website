@@ -16,19 +16,17 @@ function PostLoader(postFile, container, template, mainClass) {
 		this.isLoading = true;
 		var i = this.index;
 		while (i - this.index < n && i < this.data.length){
-			var post = document.createElement('div');
-				post.classList.add(this.class);
 				var a = this.template;
 				while(a.indexOf('{') > 0){
 					a = a.substring(0, a.indexOf('{')) + eval('this.data[' + i + '].' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
 				}
-				post.innerHTML = a;
+				var post = $("<div>").addClass(this.class).html(a);
 
-				more = post.getElementsByClassName('more')[0]
+				var more = post.children('.more');
 				if (more){
 					more.index = i;
 					more.scope = this;
-					more.addEventListener('click', this.onClick);
+					more.click(this.onClick);
 				}
 			this.parent.append(post);
 			i++;
