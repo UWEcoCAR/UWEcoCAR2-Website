@@ -2,7 +2,7 @@ require(["jquery"]);
 
 //Load common elements
 $("<link/>").attr({
-	href: "css/index.css",
+	href: "css/common.css",
 	rel: "stylesheet"
 }).appendTo("head");
 
