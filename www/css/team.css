@@ -1,35 +1,35 @@
 .portrait {
-  float:left;
-  margin: -40px -40px 0 40px;
-  /*
-  -webkit-transform: rotate(2deg);
-  -webkit-backface-visibility: hidden;
-  */
+    float:left;
+    margin: -40px -40px 0 40px;
+    /*
+    -webkit-transform: rotate(2deg);
+    -webkit-backface-visibility: hidden;
+    */
 }
 
 .post:nth-child(2n) .portrait {
-  float:right;
-  margin: -40px 40px 0 40px;
+    float:right;
+    margin: -40px 40px 0 40px;
 }
 
 .post {
-  min-height: 250px;
-  max-height: 250px;
+    min-height: 250px;
+    max-height: 250px;
 }
 
 #main {
-  text-align: center;
+    text-align: center;
 }
 
 #main img {
-  -webkit-transform: rotate(-2deg);
-  -webkit-backface-visibility: hidden;
-  margin-top: 40px;
-  border: 10px solid white;
-  box-shadow: 2px 2px 15px #888;
+    -webkit-transform: rotate(-2deg);
+    -webkit-backface-visibility: hidden;
+    margin-top: 40px;
+    border: 10px solid white;
+    box-shadow: 2px 2px 15px #888;
 }
 
 #main h2 {
-  width: 70%;
-  margin: -20px auto 30px auto;
+    width: 70%;
+    margin: -20px auto 30px auto;
 }

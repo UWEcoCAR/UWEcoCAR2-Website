@@ -1,25 +1,25 @@
 #posts {
-  margin: 0 auto 0 auto;
-  overflow: hidden;
-  width: 1120px;
-  background-color: white;
-  box-shadow: 0 0 8px #888888;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    width: 1120px;
+    background-color: white;
+    box-shadow: 0 0 8px #888888;
 } 
 
 .post {
-  min-height: 300px;
-  overflow: hidden;
-  clear: both;
+    min-height: 300px;
+    overflow: hidden;
+    clear: both;
 }
 
 .title {
-	margin: 0px;
-	margin-right: 5px;
+    margin: 0px;
+    margin-right: 5px;
 }
 
 .more {
-	color: #08c;
-	text-decoration: none;
+    color: #08c;
+    text-decoration: none;
 }
 
 .more:hover {
@@ -28,40 +28,40 @@
 }
 
 .post:nth-child(2n) .more{
-	left: 0px;
-	right: initial;
+    left: 0px;
+    right: initial;
 }
 
 .post {
     overflow: hidden;
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
-	-webkit-animation: fadeup 1.5s;
+    -webkit-animation: fadeup 1.5s;
 }
 
 .picture {
-	width: 50%;
-	float:left;
+    width: 50%;
+    float:left;
     margin: 0 40px 40px 0;
 }
 
 .post:nth-child(2n) .picture {
-	float:right;
+    float:right;
     margin: 0 0 40px 40px;
 }
 
 .text {
-	width: 40%;
-	font-size:10pt;
-	overflow:hidden;
-	display: inline;
-	
+    width: 40%;
+    font-size:10pt;
+    overflow:hidden;
+    display: inline;
+    
 }
 
 .post:nth-child(2n) .text {
 }
 
 @-webkit-keyframes fadeup {
-	0% {opacity: .0; margin-bottom: 150px;}
+    0% {opacity: .0; margin-bottom: 150px;}
     100% {opacity: 1; margin-bottom: 0px;}
 }
