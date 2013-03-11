@@ -1,0 +1,1 @@
+To build the application, ```cd``` into the website directory and then run ```java -classpath lib/js.jar:lib/compiler.jar org.mozilla.javascript.tools.shell.Main lib/r.js -o build/build.js```
