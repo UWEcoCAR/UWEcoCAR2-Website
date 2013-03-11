@@ -6,38 +6,21 @@
 	</head>
 	<body>
 		<h1>UW EcoCar 2 - Interactive Chevy Malibu</h1>
-		<div id="interactivecar">
-			<!-- More Info Buttons -->
-			
-			<div class="more" id="engine">		
-				<a href="#"><img src="images/more.png"/></a>
-				<span>Diesel Engine</span>	
-			</div>
-			
-			<div class="more" id="battery">
-				<a href="#"><img src="images/more.png"/></a>
-				<span>Battery Pack</span>
-			</div>
-			
-			<!-- Info Boxes -->
-			<div id="infobox">
-				<span class="close"><a href="#"><img src="images/close.png"/></a></span>
-				<br/>
-				
-				<div id="engine_info">
-					<img src="images/engine.jpg"/><br/>
-					<a href="http://upload.wikimedia.org/wikipedia/commons/1/1b/Mercedes_V6_DTM_Rennmotor_1996.jpg">Engine</a>
-				</div>
-				
-				<div id="battery_info">
-					<img src="images/battery.jpg"/><br/>
-					<a href="http://www.zeropaid.com/wp-content/uploads/2012/08/iPhone-battery.jpeg">Battery Pack</a>
-				</div>
-			</div>
-			
-			<!-- Dimmed Background -->
-			<div id="fade_bg">&nbsp;</div>
-			
-		</div>
+
+		<div id="carContainer">
+
+			<div id="interactivecar" usemap="carMap" class="interactivecarStart">
+            	<div id="images">
+		            <img src="images/blank.gif" usemap="carMap" id="blankImage"/>
+					<map name="carMap">
+		                <area shape="polygon" coords="239,137,124,175,180,203,291,172,245,143" href="http://www.stackoverflow.com" id="batteryMap" />          
+		                <area shape="polygon" coords="505,274,453,288,438,325,456,365,520,356,524,311,509,281" href="http://www.google.com" id="engineMap" />
+		            </map>
+		        </div>
+		        <div id="moreInfo" class="cornerImageNone">
+            	</div>
+	        </div>
+
+    	</div>
 	</body>
 </html>
