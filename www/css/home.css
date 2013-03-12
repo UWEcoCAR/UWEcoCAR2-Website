@@ -1,0 +1,40 @@
+#studentWorking {
+    width: 40%;
+}
+
+#motorGearbox {
+    width: 600px;
+    margin: 0;
+    position: absolute;
+    left: 400px;
+    top: 350px;
+}
+
+#twitter, #facebook {
+    position: absolute;
+}
+
+#twitter {
+    width: 326px;
+}
+
+#socialMedia {
+    margin: 100px 0 0 600px;
+    display: block;
+}
+
+#projectSection {
+    width: auto;
+}
+.post {
+    position: relative;
+}
+
+.text {
+    margin-top: 80px;
+    display: block;
+}
+
+.more {
+    margin-right: 20px;
+}
