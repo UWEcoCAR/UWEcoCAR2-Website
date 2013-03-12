@@ -1,25 +1,29 @@
 /* Defines the boundaries of the car and displays the image */
 #interactivecar {
-    width:700px;
-    height: 500px;
-    margin:0px auto;
+    width: 800px;
+    height: 522px;
+    margin: 40px auto;
     overflow: hidden;
-    background: url('../images/interactivecar/car-small.jpg');
+    background: url('../images/interactivecar/car.jpg');
+}
+
+#interactivecar:hover {
+    background: url('../images/interactivecar/carFaded.jpg');
 }
 
 /* Detailed images displayed on hover over part of the car */
 .interactivecarBattery {
-    background: url('../images/interactivecar/car-battery.jpg');
+    background: url('../images/interactivecar/carBattery.jpg');
 }
 
 .interactivecarEngine {
-    background: url('../images/interactivecar/car-engine.jpg');
+    background: url('../images/interactivecar/carEngine.jpg');
 }
 
 /* Positions the detail images in the upper right corner */
 #moreInfo {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 522px;
     position: relative;
     top: 0px;
     left: 0px;
