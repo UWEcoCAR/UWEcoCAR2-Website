@@ -26,9 +26,3 @@ window.addEventListener("scroll", function() {
         tabBar.css("top", "100px");
     }
 });
-
-$(window).load(function(){
-    a = this;
-    $('body').show();
-    console.log('shown');
-});
