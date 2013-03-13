@@ -33,6 +33,7 @@
 }
 
 .post {
+    position: relative;
     overflow: hidden;
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
