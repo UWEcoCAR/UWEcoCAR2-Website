@@ -9,6 +9,7 @@
         {
             name: "common",
             name: "home",
+            name: "sponsors",
             name: "team"
         }
     ]
