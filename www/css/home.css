@@ -38,3 +38,72 @@
 .more {
     margin-right: 20px;
 }
+
+#specs {
+    width: 80%;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#specs tr:first-child th,
+#specs tr:first-child td {
+    border: none;
+}
+
+#specs tr {
+    vertical-align: top;
+    padding: 10px;
+}
+
+#specs th {
+    font-size: 150%;
+    text-align: left;
+    width: 200px;
+    padding: 3px;
+}
+
+#specs .newSection th,
+#specs .newSection td {
+    border-top: 1px solid grey;
+}
+
+#specs .newSection .spacer {
+    border-top: none;
+    width: 50px;
+}
+
+#specs td {
+    text-align: center;
+    padding: 3px;
+}
+
+#specs .subHeading {
+    font-size: 100%;
+}
+
+#specs ul {
+    text-align: left;
+}
+
+#specs .subli {
+    list-style: none;
+}
+
+#specs .light,
+#specs .subli,
+#specs .subHeading,
+#specs .lightRow {
+    color: grey;
+    font-weight: 300;
+}
+
+#specs sup {
+    font-size: 50%;
+}
+
+#specs .lightRow th,
+#specs .lightRow td {
+    line-height: 10px;
+    padding-bottom: 10px;
+}
