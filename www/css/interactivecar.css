@@ -4,35 +4,118 @@
     height: 522px;
     margin: 40px auto;
     overflow: hidden;
-    background: url('../images/interactivecar/car.jpg');
+    position: relative;
 }
 
-#interactivecar:hover {
+#closedCar {
+    background: url('../images/interactivecar/car.jpg');
+    z-index: 250;
+}
+
+.invisible {
+    opacity: .0;
+}
+
+.textInfo {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    z-index: 305;
+ }
+
+#skeleton {
     background: url('../images/interactivecar/carFaded.jpg');
+    z-index: 200;
 }
 
 /* Detailed images displayed on hover over part of the car */
-.interactivecarBattery {
+#batteryInfo {
     background: url('../images/interactivecar/carBattery.jpg');
+    z-index: 245;
 }
 
-.interactivecarEngine {
+#engineInfo {
     background: url('../images/interactivecar/carEngine.jpg');
+    z-index: 240;
 }
+
+#gearboxInfo {
+    background: url('../images/interactivecar/carGearbox.jpg');
+    z-index: 230;
+}
+
+#inverterInfo {
+    background: url('../images/interactivecar/carInverter.jpg');
+    z-index: 225;
+}
+
+#motorInfo {
+    background: url('../images/interactivecar/carMotor.jpg');
+    z-index: 220;
+}
+
+#tankInfo {
+    background: url('../images/interactivecar/carTank.jpg');
+    z-index: 215;
+}
+
+#transInfo {
+    background: url('../images/interactivecar/carTrans.jpg');
+    z-index: 210;
+}
+
+#ureaInfo {
+    background: url('../images/interactivecar/carUrea.jpg');
+    z-index: 205;
+}
+
+/* Text Info */
+#batteryInfoText {
+    z-index: 270;
+}
+
+#engineInfoText {
+    z-index: 269;
+}
+
+#gearboxInfoText {
+    z-index: 268;
+}
+
+#inverterInfoText {
+    z-index: 267;
+}
+
+#motorInfoText {
+    z-index: 266;
+}
+
+#tankInfoText {
+    z-index: 265;
+}
+
+#transInfoText {
+    z-index: 264;
+}
+
+#ureaInfoText {
+    z-index: 263;
+}
+
 
 /* Positions the detail images in the upper right corner */
-#moreInfo {
+.moreInfo, #skeleton, #closedCar, #images {
     width: 800px;
     height: 522px;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 0px;
 }
 
 #images {
-    position: relative;
-    top: -500px;
-    left: 0px;
+    z-index: 300;
 }
 
 /* See through image map */
@@ -41,6 +124,6 @@
 }
 
 #carMap {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 522px;
 }
