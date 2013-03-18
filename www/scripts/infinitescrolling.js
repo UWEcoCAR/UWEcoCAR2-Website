@@ -61,7 +61,7 @@ function getPosts(postFile){
 }
 
 $(document).scroll(function(event){
-    var scrolled = window.scrollY/(document.height-window.innerHeight);
+    var scrolled = window.scrollY/($('body').height()-window.innerHeight);
     if (scrolled > .96 && !postLoader.isLoading){
         postLoader.load(1);
     }
