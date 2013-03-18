@@ -40,9 +40,18 @@ function PostLoader(postFile, container, template, mainClass) {
         this.index += n;
         this.isAtEnd = this.index < posts.length;
         this.isLoading = false;
+    },
+
+    this.autoload = function() {
+        var me = this;
+        if ($(this.parent).height() + $(this.parent).position().top < window.innerHeight){
+            setTimeout(function(){
+                me.load(1);
+                me.autoload();
+            }, 100);
+        }
     }
 }
-
 
 function getPosts(postFile){
     var request = new XMLHttpRequest();
@@ -52,7 +61,7 @@ function getPosts(postFile){
 }
 
 $(document).scroll(function(event){
-    var scrolled = window.scrollY/(document.height-window.innerHeight);
+    var scrolled = window.scrollY/($('body').height()-window.innerHeight);
     if (scrolled > .96 && !postLoader.isLoading){
         postLoader.load(1);
     }
