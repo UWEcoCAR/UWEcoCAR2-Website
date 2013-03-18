@@ -75,3 +75,12 @@ h2 {
     -webkit-backface-visibility: hidden;
     */
 }
+
+#posts {
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    width: 1120px;
+    background-color: white;
+    box-shadow: 0 0 8px #888888;
+    position: relative;
+}
