@@ -1,0 +1,85 @@
+#specs {
+    width: 90%;
+    margin: 0px auto 40px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#specs tr:first-child th,
+#specs tr:first-child td {
+    border: none;
+    vertical-align: bottom;
+}
+
+#specs tr {
+    vertical-align: top;
+}
+
+#specs th {
+    font-size: 150%;
+    text-align: left;
+    width: 240px;
+    padding: 3px 0 3px 10px;
+}
+
+#specs .newSection th,
+#specs .newSection td {
+    border-top: 1px solid grey;
+}
+
+#specs .newSection .spacer {
+    border-top: none;
+    width: 50px;
+}
+
+#specs td {
+    text-align: center;
+    padding: 3px;
+}
+
+#specs .subHeading {
+    font-size: 100%;
+}
+
+#specs ul {
+    text-align: left;
+}
+
+#specs .subli {
+    list-style: none;
+}
+
+#specs .light,
+#specs .subli,
+#specs .subHeading,
+#specs .lightRow {
+    color: grey;
+    font-weight: 300;
+}
+
+#specs sup {
+    font-size: 50%;
+}
+
+#specs .lightRow th,
+#specs .lightRow td {
+    line-height: 10px;
+    padding-bottom: 10px;
+}
+
+#specs h1 {
+    margin: 0;
+}
+
+#malibu {
+    width: 100%;
+}
+
+#title {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    font-size: 300%;
+}
