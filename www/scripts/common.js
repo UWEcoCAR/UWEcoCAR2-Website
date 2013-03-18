@@ -1,11 +1,5 @@
 require(["jquery"]);
 
-//Load common elements
-$("<link/>").attr({
-    href: "css/common.css",
-    rel: "stylesheet"
-}).appendTo("head");
-
 $("<link/>").attr({
     href: "images/favicon.png",
     rel: "icon"
@@ -26,3 +20,9 @@ window.addEventListener("scroll", function() {
         tabBar.css("top", "100px");
     }
 });
+
+//Load common elements
+$("<link/>").attr({
+    href: "css/common.css",
+    rel: "stylesheet"
+}).appendTo("head");
