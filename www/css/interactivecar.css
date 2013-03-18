@@ -12,6 +12,11 @@
     z-index: 250;
 }
 
+
+.textinfo p {
+    font-size: 80%;
+}
+
 .invisible {
     opacity: .0;
 }
@@ -20,9 +25,17 @@
     height: 50px;
     width: 200px;
     position: absolute;
+    z-index: 305;
+ }
+
+ .topRight {
     top: 0px;
     left: 600px;
-    z-index: 305;
+ }
+
+ .bottomLeft {
+    top: 350px;
+    left: 0px;
  }
 
 #skeleton {

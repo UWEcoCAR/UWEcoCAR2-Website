@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('#batteryMap').hover(
         function() {
-            partHover("#battery", "Battery")
+            partHover("#battery");
         }, function() {
             partHoverEnd("#battery")
         }
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     $('#engineMap').hover(
         function() {
-            partHover("#engine", "Engine")
+            partHover("#engine");
         }, function() {
             partHoverEnd("#engine")
         }
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     $('#gearboxMap').hover(
         function() {
-            partHover("#gearbox", "Gearbox")
+            partHover("#gearbox");
         }, function() {
             partHoverEnd("#gearbox")
         }
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
     $('#inverterMap').hover(
         function() {
-            partHover("#inverter", "Inverter")
+            partHover("#inverter");
         }, function() {
             partHoverEnd("#inverter")
         }
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     $('#motorMap').hover(
         function() {
-            partHover("#motor", "Motor")
+            partHover("#motor");
         }, function() {
             partHoverEnd("#motor")
         }
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
     $('#tankMap').hover(
         function() {
-            partHover("#tank", "Tank")
+            partHover("#tank");
         }, function() {
             partHoverEnd("#tank")
         }
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     $('#transMap').hover(
         function() {
-            partHover("#trans", "Transmission")
+            partHover("#trans");
         }, function() {
             partHoverEnd("#trans")
         }
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
     $('#ureaMap').hover(
         function() {
-            partHover("#urea", "Urea")
+            partHover("#urea");
         }, function() {
             partHoverEnd("#urea")
         }
@@ -79,11 +79,10 @@ $(document).ready(function(){
 
 
 /*  Called when one of the defined map areas is hovered on
-    Displays the highlighted image and the text using the given
-    base id (eg #urea) and text */
-function partHover(backgroundStyle, text) {
+    Displays the highlighted image using the given
+    base id (eg #urea) */
+function partHover(backgroundStyle) {
     $(backgroundStyle + "Info").fadeIn();
-    $(backgroundStyle + "InfoText").html(text);
     $(backgroundStyle + "InfoText").fadeIn();
 }
 
