@@ -14,28 +14,29 @@ function PostLoader(postFile, container, template, mainClass) {
 
     this.load = function(n) {
         this.isLoading = true;
-        var i = this.index;
-        while (i - this.index < n && i < this.data.length){
-                var a = this.template;
-                while(a.indexOf('{') > 0){
-                    a = a.substring(0, a.indexOf('{')) + eval('this.data[' + i + '].' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
+        for (var i = this.index; i - this.index < n && i < this.data.length; i++){
+                var a;
+                if (this.template) {
+                    a = this.template;
+                    while(a.indexOf('{') > 0){
+                        a = a.substring(0, a.indexOf('{')) + eval('this.data[' + i + '].' + a.substring(a.indexOf('{')+1, a.indexOf('}'))) + a.substring(a.indexOf('}') +1)
+                    }
+                } else {
+                    a = getHtmlPost(this.data[i]);
                 }
                 var post = $("<div>").addClass(this.class).html(a);
 
                 var more = post.find('.more');
                 if (more && more.size()){
-                    if (!this.data[i].text){
-                        more.hide();
-                    } else {
-                        $.data(more[0], "more", this.data[i].text);
-                        more.click(function() {
+                    $.data(more[0], "more", this.data[i].text);
+                    more.click(function() {
+                        if ($.data(this, "more")) {
                             $("<p>" + $.data(this, "more") + "</p>").appendTo($(this).parent());
                             $(this).remove();
-                        });
-                    }
+                        }
+                    });
                 }
             this.parent.append(post);
-            i++;
         }
         this.index += n;
         this.isAtEnd = this.index < posts.length;
@@ -54,10 +55,14 @@ function PostLoader(postFile, container, template, mainClass) {
 }
 
 function getPosts(postFile){
+    return JSON.parse(getHtmlPost(postFile)).posts;
+}
+
+function getHtmlPost(postFile) {
     var request = new XMLHttpRequest();
     request.open('GET', postFile, false);
     request.send();
-    return JSON.parse(request.response).posts;
+    return request.response;
 }
 
 $(document).scroll(function(event){
