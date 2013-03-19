@@ -5,21 +5,54 @@
           "subtext" : "The EcoCAR2 project is divided into 3 year-long sections. Last year (2011-2012) was the first year and was focused on architecture selection, component sourcing, part modeling, and controls simulation.",
           "text" : "This year (2012-2013) is focused on implementing the designs by removing the stock powertrain and then integrating all of the new components into the donated vehicle. In May the car will be put through an array of tests to evaluate the performance of the vehicle. Vehicles are not expected to be perfected and fully optimzed by that point. This is the purpose of Year 3 (2013-2014): to bring the handling and appearance to be 99% ready to hypothetically be sold at a dealership.<br><br> During each year there are two workshops (this years workshops were in Boston and Austin) where team members recieve hands on training from industry professional and are able to talk with suppliers and get to know other teams. Through out the year, a number of reports are due to make sure that team stay up to speed to complete the project. The UW EcoCAR2 team GM mentor (Michael Abowd) periodically visits to encourage and assist the team. At the end of each year is a competition where teams present their designs and thier cars are tested.",
           "image" : "images/project/3years.png",
-          "imageClass" : "picture"
+          "imageClass" : "picture",
+          "other" : ""
         },
         { "title" : "Free Car!",
           "subTitle" : "2013 Chevy Malibu donated by General Motors",
           "subtext" : "All teams competiting in the UW EcoCAR2 competition have been provided a 2013 Chevy Malibu by Genearl Motors. Teams are expected to remove the stock powertrain and replace it with our own more fuel efficient powertrain.",
           "text" : "The UW EcoCAR2 team received its Malibu back in July and began disassembly in Novemeber. When all of the seats were removed and all of the powertrain was out, the car resembled a skeleton. The car has now been reassembled with the new components.",
           "image" : "images/project/malibu.jpg",
-          "imageClass" : "picture framed"
+          "imageClass" : "picture framed",
+          "other" : ""
         },
-        { "title" : "Bio-Diesel and Electricity ",
+        { "title" : "TTR PHEV",
+            "subTitle" : "That stands for Through-The-Road Plug-in Hybrid Electric Vehicle",
+            "subtext" : "The UW EcoCAR2 team has decided to convert their 2013 Chevy Malibu into a Through-The-Road (TTR) Plug-in Hybrid Electric Vehicle (PHEV). In this architecture, a diesel engine is connected to the front axel and an electric motor is connected to the rear axel. This architecture provides simpler component packaging, more power, all-wheel-drive, and better weight distribution, while still enabling the vehicle to get the equiviant of 59 MPG.",
+            "text" : "For the first 44 miles driven, all of the vehicle's power will come from the electric motor on the rear axel. Then, when the batteries are depleated, the engine will turn on. The engine's power output will be kept at its most efficient level. This could be more or less power than the driver is actually requesting with the gas pedal, so the electric motor will either add power or absorb power into the battery to meet the driver's request. If at any point, the driver floors it, both the engine and motor will output full power (a massive 333 HP)!<br><br>A Toyota Prius does a very similar technique, but uses a very complicated torque coupling transmission to connect the engine and motor. In the Prius, all of these components have to fit in the front of the car, which makes it front heavy and requires smaller less powerful components to be used. By connecting the motor and engine Through-The-Road, the UW EcoCAR2 team is able to use more powerful components and therefore achieve much better handling and speed.<br><br>The Chevy Volt is even more similar! The Volt has an electric motor on the rear axel and an engine in the front, but the engine is not connected to the front axel. Instead it is connected to a generator which powers the motor. This (like the Prius) has the disadvantage of limiting the overall power available at the wheels and elimnates all-wheel-drive capabilities.<br><br>The advantage that the Prisus and Volt have over the UW EcoCAR2 team's architecture is that transfering power Through-The-Road is not quite as efficient as through a generator or direct mechanical linkage.<br><br>To learn more about our component selection, please check out our <a class='more' href='index.html'>interactive vehicle model</a><br><br>Also check out our complete <a class='more' href='specs.html'>vehicle specifications</a>.",
+            "image" : "images/project/ttr.png",
+            "imageClass" : "picture",
+            "other" : ""
+          },
+        { "title" : "Bio-Diesel and Electricity",
           "subTitle" : "The next generation of American vehicles will likely use Diesel.",
           "subtext" : "With a 44 mile electric range, most drivers could drive to work, charge, and drive home without ever having to pay for a drop of fuel.",
           "text" : "The fact is diesel engines are more efficient at converting chemical energy into mechanical energy. Diesel is also more energy dense. These two facts mean less CO<sub>2</sub> is produced and drivers can go farther on a single tank.<br><br>The UW EcoCAR2 team has chosen to use Diesel that is made of 20% biological material. Unlike ethanol, this material does not have to be corn. It could be alga, yard waste, or old vegetable oil. This helps eliminate some of the political and economic issues associated with corn based ethanol production.<br><br>Bio-Diesel does have its disadvantages. Most notably, it produces more NO<sub>x</sub> emissions (a key ingredient in smog). To combate this, the UW EcoCAR2 team is installing urea injection into the exhaust system. The urea reacts with NO<sub>x</sub> and renders it harmless.",
           "image" : "images/project/fuel.png",
-          "imageClass" : "picture"
+          "imageClass" : "picture",
+          "other" : ""
+        },
+        { "title" : "99% Production Ready",
+          "subTitle" : "Consumer acceptability is critical.",
+          "subtext" : "Unlike many automotive competitions, EcoCAR2 makes consumer acceptability a top priority. The UW EcoCAR2 team is creating a faster, more efficient car while maintaining 5 seats and a reasonable amount of trunk space along with adding a completely redesigned center console.",
+          "text" : "It is one thing to design a solar panel car with a ton of batteries, but if it can never get above 50 MPH or there is only two seats, then it probably will not sell. Similarly if the interior or exterior look sloppy, it also will not sell. Therefore teams are evaulated on all aspects of comsumer acceptability, from the amount of trunk space to the number of coat hangers and from how the car rides to the fit and finnish.<br><br>In order to improve both the efficiency of the vehicle and increase the consumer acceptability, the UW EcoCAR2 team is designing and implementing a whole new touch screen center console. The touch screen is being designed to be as safe and intuitive as possible while also being well styled and provide the driver valuable feedback about their driving habits to help them improve the efficiency of their driving.",
+          "image" : "images/project/centerStack.jpg",
+          "imageClass" : "picture framed",
+          "other" : ""
+        },
+        { "title" : "Competition Bound",
+            "subTitle" : "Detriot, Austin, Los Angeles, Boston, San Diego ...",
+            "subtext" : "Every year, 10-12 team members get to go to Fall Workshop, Winter Workshop, and then Competition. At the workshops, team members recieve hands on training from industry professionals which is very valuable for rebuilding the car. At the end of each year is Competition where team members present about the progess of the Mechanical, Electrical, Controls, Business, Communications, and Center Stack teams. In years two and three, the cars are also evaulated at Competition.",
+            "text" : "Workshops and competitions also provide an oppertunity to get to know other teams, enjoy their company, and discuss problems they are facing. Although each team wants to win, ultimately the goal is for everyone to learn, so teams are more than willing to help each other out.<br><br>The competition organizers do an excellent job of making the events very fun and pay for teams to stay in very nice hotels. This provides a lot of motivation for new team members to actively involved in the project because generally the most committed team members get to go to workshops and competitions.",
+            "image" : "images/project/competition.jpg",
+            "imageClass" : "picture framed",
+            "other" : ""
+          },
+        { "title" : "A Top Notch Lab Space",
+          "subTitle" : "Located in the UW Mechanical Engineering Annex",
+          "subtext" : "The UW EcoCAR2 team has established a high quality automotive lab space that will be used for years to come.",
+          "text" : "Although the lab may be in the second oldest building on campus, it is a well lit, wide open space with room for a vehicle lift, high voltage area, two CAD workstations, a HIL test bench, five computer stations. On top of that, the machine shop is just down the hall!",
+          "other" : "<iframe class='picture framed' height='375px' src='http://www.youtube.com/embed/Hx0vtIvUZqs' frameborder='0' allowfullscreen></iframe>"
         }
     ]
 }
