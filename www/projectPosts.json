@@ -1,0 +1,25 @@
+{
+    "posts" : [
+        { "title" : "3-Year Competition",
+          "subTitle" : "Filled with workshops, reports, mentor visits, and competitions.",
+          "subtext" : "The EcoCAR2 project is divided into 3 year-long sections. Last year (2011-2012) was the first year and was focused on architecture selection, component sourcing, part modeling, and controls simulation.",
+          "text" : "This year (2012-2013) is focused on implementing the designs by removing the stock powertrain and then integrating all of the new components into the donated vehicle. In May the car will be put through an array of tests to evaluate the performance of the vehicle. Vehicles are not expected to be perfected and fully optimzed by that point. This is the purpose of Year 3 (2013-2014): to bring the handling and appearance to be 99% ready to hypothetically be sold at a dealership.<br><br> During each year there are two workshops (this years workshops were in Boston and Austin) where team members recieve hands on training from industry professional and are able to talk with suppliers and get to know other teams. Through out the year, a number of reports are due to make sure that team stay up to speed to complete the project. The UW EcoCAR2 team GM mentor (Michael Abowd) periodically visits to encourage and assist the team. At the end of each year is a competition where teams present their designs and thier cars are tested.",
+          "image" : "images/project/3years.png",
+          "imageClass" : "picture"
+        },
+        { "title" : "Free Car!",
+          "subTitle" : "2013 Chevy Malibu donated by General Motors",
+          "subtext" : "All teams competiting in the UW EcoCAR2 competition have been provided a 2013 Chevy Malibu by Genearl Motors. Teams are expected to remove the stock powertrain and replace it with our own more fuel efficient powertrain.",
+          "text" : "The UW EcoCAR2 team received its Malibu back in July and began disassembly in Novemeber. When all of the seats were removed and all of the powertrain was out, the car resembled a skeleton. The car has now been reassembled with the new components.",
+          "image" : "images/project/malibu.jpg",
+          "imageClass" : "picture framed"
+        },
+        { "title" : "Bio-Diesel and Electricity ",
+          "subTitle" : "The next generation of American vehicles will likely use Diesel.",
+          "subtext" : "With a 44 mile electric range, most drivers could drive to work, charge, and drive home without ever having to pay for a drop of fuel.",
+          "text" : "The fact is diesel engines are more efficient at converting chemical energy into mechanical energy. Diesel is also more energy dense. These two facts mean less CO<sub>2</sub> is produced and drivers can go farther on a single tank.<br><br>The UW EcoCAR2 team has chosen to use Diesel that is made of 20% biological material. Unlike ethanol, this material does not have to be corn. It could be alga, yard waste, or old vegetable oil. This helps eliminate some of the political and economic issues associated with corn based ethanol production.<br><br>Bio-Diesel does have its disadvantages. Most notably, it produces more NO<sub>x</sub> emissions (a key ingredient in smog). To combate this, the UW EcoCAR2 team is installing urea injection into the exhaust system. The urea reacts with NO<sub>x</sub> and renders it harmless.",
+          "image" : "images/project/fuel.png",
+          "imageClass" : "picture"
+        }
+    ]
+}
