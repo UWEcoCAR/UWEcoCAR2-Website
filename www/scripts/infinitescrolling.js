@@ -1,8 +1,11 @@
 var postLoader;
 
-function PostLoader(postFile, container, template, mainClass) {
+function PostLoader(postFile, container, template, mainClass, dataObjectName) {
+    if (!dataObjectName) {
+        dataObjectName = "posts";
+    }
     this.index = 0;
-    this.data = getPosts(postFile);
+    this.data = getPosts(postFile, dataObjectName);
     this.parent = container;
     this.template = template;
     this.class = mainClass;
@@ -42,6 +45,15 @@ function PostLoader(postFile, container, template, mainClass) {
         this.isAtEnd = this.index < posts.length;
         this.isLoading = false;
     },
+    
+    this.loadToSection = function(targetSection, targetAttribute) {
+        for (var i = this.index; i < this.data.length; i++) {
+            if (this.data[i][targetAttribute] === targetSection) {
+                this.load(i - this.index + 1);
+                return;
+            }
+        }
+    }
 
     this.autoload = function() {
         var me = this;
@@ -54,8 +66,8 @@ function PostLoader(postFile, container, template, mainClass) {
     }
 }
 
-function getPosts(postFile){
-    return JSON.parse(getHtmlPost(postFile)).posts;
+function getPosts(postFile, dataObjectName){
+    return JSON.parse(getHtmlPost(postFile))[dataObjectName];
 }
 
 function getHtmlPost(postFile) {
