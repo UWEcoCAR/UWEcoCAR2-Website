@@ -1,0 +1,13 @@
+.message {
+    position: absolute;
+    wdith: 100%;
+    white-space: nowrap;
+}
+
+#errorMessages {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}

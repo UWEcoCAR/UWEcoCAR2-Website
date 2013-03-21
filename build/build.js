@@ -10,7 +10,9 @@
             name: "common",
             name: "home",
             name: "sponsors",
-            name: "team"
+            name: "team",
+            name: "project",
+            name: "error"
         }
     ]
 })
