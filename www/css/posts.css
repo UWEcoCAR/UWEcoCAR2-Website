@@ -29,11 +29,11 @@
     overflow: hidden;
     background: url(../images/divider.jpg) 0 0 no-repeat;
     padding: 60px;
-    -webkit-animation: fadeup 1.5s;
-    -moz-animation: fadeup 1.5s;
-   /* -ms-animation: fadeup 1.5s;
-    -o-animation: fadeup 1.5s;
-    animation: fadeup 1.5s;*/
+    -webkit-animation: fadeup 1s;
+    -moz-animation: fadeup 1s;
+    /*-ms-animation: fadeup 1s;*/
+    -o-animation: fadeup 1s;
+    animation: fadeup 1s;
 
 }
 
@@ -64,6 +64,14 @@
     100% {opacity: 1; bottom: 0px;}
 }
 @-moz-keyframes fadeup {
+    0% {opacity: .0; bottom: -150px;}
+    100% {opacity: 1; bottom: 0px;}
+}
+@-o-keyframes fadeup {
+    0% {opacity: .0; bottom: -150px;}
+    100% {opacity: .0; bottom: 0px;}
+}
+@keyframes fadeup {
     0% {opacity: .0; bottom: -150px;}
     100% {opacity: 1; bottom: 0px;}
 }

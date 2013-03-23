@@ -14,15 +14,7 @@
     background: #eee;
     border: 1px solid #e2e2e2;
     padding: 17px;
-    -webkit-border-radius: 0.4em;
-    -moz-border-radius: 0.4em;
-    -o-border-radius: 0.4em;
-    -ms-border-radius: 0.4em;
     border-radius: 0.4em;
-    -webkit-box-shadow: inset 0px 0px 10px #e2e2e2;
-    -moz-box-shadow: inset 0px 0px 10px #e2e2e2;
-    -o-box-shadow: inset 0px 0px 10px #e2e2e2;
-    -ms-box-shadow: inset 0px 0px 10px #e2e2e2;
     box-shadow: inset 0px 0px 10px #e2e2e2;
 }
 
@@ -55,7 +47,10 @@ img[src="undefined"] {
 
 #mainImage {
     -webkit-transform: rotate(-2deg);
-    -webkit-backface-visibility: hidden;
+    -moz-transform: rotate(-2deg);
+  /*-ms-transform: rotate(-2deg);*/
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
     margin: 0 50px 10px 0;
     float: left;
 }

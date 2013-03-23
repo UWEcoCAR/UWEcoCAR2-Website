@@ -75,10 +75,6 @@ h2 {
 .framed {
     border: 5px solid white;
     box-shadow: 2px 2px 15px #888;
-    /*
-    -webkit-transform: rotate(2deg);
-    -webkit-backface-visibility: hidden;
-    */
 }
 
 #posts {

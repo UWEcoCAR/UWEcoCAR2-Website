@@ -1,10 +1,6 @@
 .portrait {
     float:left;
     margin: -40px -40px 0 40px;
-    /*
-    -webkit-transform: rotate(2deg);
-    -webkit-backface-visibility: hidden;
-    */
 }
 
 .post:nth-child(2n) .portrait {
@@ -23,7 +19,10 @@
 
 #main img {
     -webkit-transform: rotate(-2deg);
-    -webkit-backface-visibility: hidden;
+    -moz-transform: rotate(-2deg);
+    /*-ms-transform: rotate(-2deg);*/
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
     margin-top: 40px;
     border: 10px solid white;
     box-shadow: 2px 2px 15px #888;
