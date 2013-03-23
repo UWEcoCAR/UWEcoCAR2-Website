@@ -57,7 +57,11 @@ function PostLoader(postFile, container, template, mainClass, dataObjectName) {
 
     this.autoload = function() {
         var me = this;
-        if ($(this.parent).height() + $(this.parent).position().top < window.innerHeight){
+        console.log('autoload? ' + ($(this.parent).height() + $(this.parent).position().top) + " < " + window.innerHeight);
+        if (this.parent.height() === 0) {
+            console.log('not loaded yet :(');
+            setTimeout(function(){me.autoload()}, 200);
+        } else if (this.parent.height() + $(this.parent).position().top < window.innerHeight){
             setTimeout(function(){
                 me.load(1);
                 me.autoload();
@@ -77,12 +81,15 @@ function getHtmlPost(postFile) {
     return request.response;
 }
 
-$(document).scroll(function(event){
-    var scrolled = window.scrollY/($('body').height()-window.innerHeight);
-    if (scrolled > .96 && !postLoader.isLoading){
+$(document).scroll(loadIfNeeded);
+$(window).resize(loadIfNeeded);
+
+function loadIfNeeded(event) {
+    var scrolled = (window.scrollY + window.innerHeight) / $('body').height()
+    if (scrolled > 1 && !postLoader.isLoading){
         postLoader.load(1);
     }
-});
+}
 
 $("<link/>").attr({
     href: "css/posts.css",
