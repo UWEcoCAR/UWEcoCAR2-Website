@@ -5,10 +5,10 @@ $(document).ready(function(){
 
     $('#interactivecar').hover(
         function() {
-            $('#closedCar').fadeOut();
+            $('#closedCar').fadeOut(200);
         },
         function () {
-            $('#closedCar').fadeIn();
+            $('#closedCar').fadeIn(200);
         }
     );
 
@@ -82,14 +82,14 @@ $(document).ready(function(){
     Displays the highlighted image using the given
     base id (eg #urea) */
 function partHover(backgroundStyle) {
-    $(backgroundStyle + "Info").fadeIn();
-    $(backgroundStyle + "InfoText").fadeIn();
+    $(backgroundStyle + "Info").fadeIn(200);
+    $(backgroundStyle + "InfoText").fadeIn(200);
 }
 
 
 /*  Called when one of the defined map areas is hovered off of
     hides all information pretaining to the previously hovered area */
 function partHoverEnd(backgroundStyle) {
-    $(backgroundStyle + "InfoText").fadeOut();
-    $(backgroundStyle + "Info").fadeOut();
+    $(backgroundStyle + "InfoText").fadeOut(200);
+    $(backgroundStyle + "Info").fadeOut(200);
 }

@@ -13,8 +13,8 @@
 }
 
 
-.textinfo p {
-    font-size: 80%;
+.textInfo strong {
+    font-size: 110%;
 }
 
 .invisible {
@@ -23,14 +23,14 @@
 
 .textInfo {
     height: 50px;
-    width: 200px;
+    width: 280px;
     position: absolute;
     z-index: 305;
  }
 
  .topRight {
     top: 0px;
-    left: 600px;
+    right: 0px;
  }
 
  .bottomLeft {
