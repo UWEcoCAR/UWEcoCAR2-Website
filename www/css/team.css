@@ -1,5 +1,7 @@
 .portrait {
-    float:left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     margin: -40px -40px 0 40px;
 }
 
@@ -8,9 +10,9 @@
     margin: -40px 40px 0 40px;
 }
 
-.post {
-    min-height: 250px;
-    max-height: 250px;
+.post .text {
+    width: 60%;
+    display: block;
 }
 
 #main {
