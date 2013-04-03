@@ -1,9 +1,6 @@
 /* Defines the boundaries of the car and displays the image */
 #interactivecar {
-    width: 800px;
-    height: 522px;
-    margin: 40px auto;
-    overflow: hidden;
+    margin: 40px;
     position: relative;
 }
 
@@ -12,131 +9,97 @@
     z-index: 250;
 }
 
-
-.textinfo p {
-    font-size: 80%;
-}
-
-.invisible {
-    opacity: .0;
-}
-
 .textInfo {
     height: 50px;
-    width: 200px;
+    width: 280px;
     position: absolute;
     z-index: 305;
- }
+}
 
- .topRight {
+.textInfo p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.textInfo h4 {
+    font-size: 130%;
+    margin: 0;
+}
+
+.topRight {
     top: 0px;
-    left: 600px;
- }
+    right: 40px;
+}
 
- .bottomLeft {
-    top: 350px;
-    left: 0px;
- }
+.bottomLeft {
+    top: 360px;
+    left: 40px;
+}
 
 #skeleton {
     background: url('../images/interactivecar/carFaded.jpg');
     z-index: 200;
 }
 
-/* Detailed images displayed on hover over part of the car */
-#batteryInfo {
-    background: url('../images/interactivecar/carBattery.jpg');
-    z-index: 245;
+#interactiveCarMap {
+    z-index: 300;
 }
 
-#engineInfo {
-    background: url('../images/interactivecar/carEngine.jpg');
-    z-index: 240;
-}
-
-#gearboxInfo {
-    background: url('../images/interactivecar/carGearbox.jpg');
-    z-index: 230;
-}
-
-#inverterInfo {
-    background: url('../images/interactivecar/carInverter.jpg');
+#partImages > * {
     z-index: 225;
+    display: none;
 }
 
-#motorInfo {
+/* Detailed images displayed on hover over part of the car */
+#battery {
+    background: url('../images/interactivecar/carBattery.jpg');
+}
+
+#engine {
+    background: url('../images/interactivecar/carEngine.jpg');
+}
+
+#gearbox {
+    background: url('../images/interactivecar/carGearbox.jpg');
+}
+
+#inverter {
+    background: url('../images/interactivecar/carInverter.jpg');
+}
+
+#motor {
     background: url('../images/interactivecar/carMotor.jpg');
-    z-index: 220;
 }
 
-#tankInfo {
+#tank {
     background: url('../images/interactivecar/carTank.jpg');
-    z-index: 215;
 }
 
-#transInfo {
+#trans {
     background: url('../images/interactivecar/carTrans.jpg');
-    z-index: 210;
 }
 
-#ureaInfo {
+#urea {
     background: url('../images/interactivecar/carUrea.jpg');
-    z-index: 205;
 }
-
-/* Text Info */
-#batteryInfoText {
-    z-index: 270;
-}
-
-#engineInfoText {
-    z-index: 269;
-}
-
-#gearboxInfoText {
-    z-index: 268;
-}
-
-#inverterInfoText {
-    z-index: 267;
-}
-
-#motorInfoText {
-    z-index: 266;
-}
-
-#tankInfoText {
-    z-index: 265;
-}
-
-#transInfoText {
-    z-index: 264;
-}
-
-#ureaInfoText {
-    z-index: 263;
-}
-
 
 /* Positions the detail images in the upper right corner */
-.moreInfo, #skeleton, #closedCar, #images {
-    width: 800px;
-    height: 522px;
+#partImages > *, #skeleton, #closedCar, #interactiveCarMap {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
 #images {
-    z-index: 300;
+    width: 800px;
+    height: 522px;
+    margin: 40px auto;
+    position: relative;
 }
 
 /* See through image map */
 #blankImage {
-    opacity: .0;
-}
-
-#carMap {
-    width: 800px;
-    height: 522px;
+    opacity: 0.0;
 }
