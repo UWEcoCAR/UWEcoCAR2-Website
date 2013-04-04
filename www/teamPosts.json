@@ -4,49 +4,62 @@
           "subTitle" : "Team Captain",
           "text" : "Having developed a unique electric drive project once before, he and the Voltaic Drive Systems took first place at the Environmental Innovation Challenge two years ago.  It was a natural evolution to find and apply for the EcoCAR 2 program, with which he now finds great satisfaction leading a larger team of students in innovation. <br><br> Fayer, as he's known, likes snowboarding, climbing, hiking, biking, roller coasters, fireplaces, cabins in the woods, quiet times, computers, and three-hour long projects to fix that thing that would otherwise cost him $2 on amazon.com. ",
           "subtext" : "Trevor Fayer is a second-year MSME student with a history of involvement with electric drive projects at the University of Washington.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/fayer1.png",
+          "image2" : "images/team/fayer2.png",
+          "image3" : "images/team/fayer3.png"
         },
         { "title" : "Brendan Boyer",
           "subTitle" : "Mechanical Team Co-Captain",
           "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere, erat in rhoncus pellentesque, lacus ligula venenatis sem, luctus dictum mi lacus id turpis. Maecenas in augue nec velit suscipit sodales. Aenean vel erat a neque commodo tincidunt sed ut nulla. Aliquam dictum venenatis tempor. Morbi cursus elementum ultricies. Aenean sed sagittis tortor. Aenean dolor dolor, imperdiet a semper ut, placerat eu mauris. Ut quam enim, vehicula sed volutpat placerat, fermentum vitae risus. Vivamus dictum nulla eget arcu accumsan ultrices. Praesent cursus placerat velit, non ultricies eros tempor id.Etiam tempus, arcu feugiat interdum fringilla, ipsum nulla consectetur elit, eget aliquet odio ligula vitae augue. Ut iaculis enim ac est lobortis pharetra a ac felis. Aenean lobortis turpis et neque gravida venenatis. Maecenas auctor porttitor facilisis. Vivamus non lectus massa, in dapibus tellus. Vivamus sit amet eros est, et lobortis libero. Nulla odio nibh, sodales vitae condimentum id, iaculis vitae risus. Pellentesque id lectus lacus. Ut ac enim nibh, non luctus tellus. Sed sem neque, tristique vitae lacinia eu, volutpat id felis. Phasellus commodo arcu sed dolor posuere ac ullamcorper dui facilisis. Aliquam congue, purus nec lobortis faucibus, purus est molestie eros, non iaculis libero ipsum in eros. Vivamus hendrerit.",
           "subtext" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere, erat in rhoncus pellentesque, lacus ligula venenatis sem, luctus dictum mi lacus id turpis.",
           "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/blank.png",
+          "image2" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Josh Wilke",
           "subTitle" : "Mechanical Team Co-Captain",
           "text" : "Josh grew up in Sammamish, a suburb of Seattle, and knew he wanted to be an engineer at a very early age. Joshua likes computer networking, intramural football, frisbee, and sleeping in the lab space.",
           "subtext" : "Joshua Wilke is a senior BSME student with a Mechatronics concentration at UW. His role as Mechanical Team Lead covers anything that is not software or electrical related. This includes exhaust, fuel, powertrain, cooling, and fabrication.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/blank.png",
+          "image2" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Trevor Crain",
           "subTitle" : "Controls Team Captain",
           "text" : "His focus on the project is on developing a supervisory control strategy for the vehicle's hybrid propulsion systems. The fault-tolerant control scheme will be focused on minimizing emissions and fuel consumption while still maintaining driveability. In the future, he plans to continue researching automotive control strategies in the UW PhD program. <br><br>Crain, as he's known, enjoys meeting people with the same name as him, and in his free time he likes preparing for EcoCAR 2 deliverables, troubleshooting vehicle control code, and writing research papers. ",
           "subtext" : "Trevor Crain serves as the Controls Lead on the EcoCAR 2 project. Trevor's time at UW in both undergraduate and graduate school has been primarily focused on his research in advanced vehicle technology.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image2" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Blake Simpson",
           "subTitle" : "Electrical Team Captain",
           "text" : "Blake has been on the UW EcoCAR 2 team for the past two years. While on the team, he has focused on the design and fabrication of the battery pack and electrical system. At the Year 1 competition, Blake Simpson and Richard Wurden finished first place out of fifteen schools for Best Electrical Presentation. In addition, Blake and Rich also won a cash prize for Best Battery Pack Design. Currently, Blake is the Electrical Team Lead and is working to finish building the UW's Chevy Malibu that will compete at the Year 2 competition in Yuma, Arizona.<br><br>In addition to the UW EcoCAR 2 project, Blake fielded a team composed of engineers and artists to participate in Walt Disney's Imaginations competition where students are tasked to design a themed attraction. As team lead, Blake bridged the gap between the artists and the highly technical engineers. In September of 2012, Blake attended one of the premier themed industry events at Disney Land Paris where he talked with Disney Imagineers about the design process behind 'The Magic.' He came away with one important design parameter: Story is King. At the moment, his team's design is still in the works and hopefully will be pitched to Disney sometime in the near future.<br><br>After graduation in June, Blake Simpson plans to work at the Boeing Company where he will continue his research on composites from the previous summer in BR&T. Blake is thankful for all the people who have supported him in his academic pursuits and career goals.",
           "subtext" : "Blake Simpson is a BSME student and a recipient of the Russell Gibson Wayland Scholarship as well as the Blake D. and Dorthy C. Mills Scholarships. Blake's time at UW has been focused on the design of both themed attractions and hybrid vehicles.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Taj Mathews",
           "subTitle" : "Business Manager",
           "text" : "Taj grew up in Seattle, and moved to Annapolis, MD to attend the United States Naval Academy where he was Captain of the basketball team and studied Information Technology Management. After graduation he was commissioned and served for 5 years as a Surface Warfare Officer in Virginia, Texas and Bahrain. He recently consulted with Microsoft's Windows Azure US marketing team for his Applied Strategy project, helping them develop go to market strategies with partner independent software vendor. Taj will return to Microsoft this summer as a Product Manager intern in the Server and Tools Business working with the Enterprise Client Team.",
           "subtext" : "Taj is a 2013 MBA, focusing on Marketing and Entrepreneurship. He currently holds leadership positions in both the Marketing Club and the Technology Business Club, is the Boys & Girls Club representative for Challenge for Charity and a Foster Board Fellow for the Rainier Vista Boys & Girls Club.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Tyler Rose",
           "subTitle" : "Communications Manager",
           "text" : "Seattle is an awesome place to host a University team, and he is proud to represent the city and the school. Besides working on his own project cars and writing car-related articles, he enjoys reading about cars, watching car programs on tv, and fantasizing about cars that he hopes to own one day. Cars, cars, cars!",
           "subtext" : "The EcoCAR 2 competition is the perfect project for Tyler because he is so passionate about cars and about the environment. Tyler's presence brings joy and spirit to the lab.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image1" : "images/team/blank.png",
+          "image2" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         },
         { "title" : "Prof. Brian Fabien",
           "subTitle" : "Faculty Advisor",
           "text" : "Professor Fabien joined the University of Washington in 1993, after teaching for three years at Ohio University. His research interests include the kinematics of mechanisms, dynamic system analysis and optimization, as well as control system design. In 1993, Professor Fabien received a Presidential Faculty Fellowship award from the National Science Foundation. He was also awarded a Fulbright Scholarship in 1997 to perform research and teaching at the University of the West Indies, Trinidad.<br><br>Professor Fabien is the Director of the Dynamic Systems Modeling and Controls Laboratory. He currently serves as Chair of the Faculty Council on Student Affairs. ",
           "subtext" : "The UW EcoCAR2 team would not be in existance without the efforts of Professor Fabien. If fact, at the Y1 EcoCAR 2 competition, Professor Fabien received an award for being the best 1st-time-team adviser.",
-          "image" : "http://images.apple.com/support/assets/images/layout/psp/icons/contact_hero.png"
+          "image2" : "images/team/blank.png",
+          "image3" : "images/team/blank.png"
         }
     ]
 }
