@@ -12,9 +12,9 @@
           "subTitle" : "Mechanical Team Co-Captain",
           "text" : "As Mechanical Co-Captain, Brendan coordinates the efforts of the 20 students making modifications to the chassis and powertrain. He helps teammates get past road blocks, sometimes even does something himself, but remains perpetually mystified by wires and computers.<br><br>Brendan is an adrenaline junkie who won't admit it, loves to dance with his two left feet, is a shameless fan of Ke$ha songs, and reads textbooks for fun. He is the most interesting man in the world, but prefers a neat scotch over Dos Equis.",
           "subtext" : "Brendan Boyer is a graduate of the UW School of Environmental and Forest Science where he was involved with biofuels research for his capstone. After a short hiatus, he returned to his alma mater to continue working with sustainable transportation, and is now a Junior in Mechanical Engineering.",
-          "image1" : "images/team/blank.png",
-          "image2" : "images/team/blank.png",
-          "image3" : "images/team/blank.png"
+          "image1" : "images/team/boyer1.png",
+          "image2" : "images/team/boyer2.png",
+          "image3" : "images/team/boyer3.png"
         },
         { "title" : "Josh Wilke",
           "subTitle" : "Mechanical Team Co-Captain",
@@ -28,9 +28,9 @@
           "subTitle" : "Controls Team Captain",
           "text" : "His focus on the project is on developing a supervisory control strategy for the vehicle's hybrid propulsion systems. The fault-tolerant control scheme will be focused on minimizing emissions and fuel consumption while still maintaining driveability. In the future, he plans to continue researching automotive control strategies in the UW PhD program. <br><br>Crain, as he's known, enjoys meeting people with the same name as him, and in his free time he likes preparing for EcoCAR 2 deliverables, troubleshooting vehicle control code, and writing research papers. ",
           "subtext" : "Trevor Crain serves as the Controls Lead on the EcoCAR 2 project. Trevor's time at UW in both undergraduate and graduate school has been primarily focused on his research in advanced vehicle technology.",
-          "image1" : "images/team/blank.png",
-          "image2" : "images/team/blank.png",
-          "image3" : "images/team/blank.png"
+          "image1" : "images/team/crain1.png",
+          "image2" : "images/team/crain2.png",
+          "image3" : "images/team/crain3.png"
         },
         { "title" : "Blake Simpson",
           "subTitle" : "Electrical Team Captain",
@@ -52,9 +52,9 @@
           "subTitle" : "Communications Manager",
           "text" : "Seattle is an awesome place to host a University team, and he is proud to represent the city and the school. Besides working on his own project cars and writing car-related articles, he enjoys reading about cars, watching car programs on tv, and fantasizing about cars that he hopes to own one day. Cars, cars, cars!",
           "subtext" : "The EcoCAR 2 competition is the perfect project for Tyler because he is so passionate about cars and about the environment. Tyler's presence brings joy and spirit to the lab.",
-          "image1" : "images/team/blank.png",
-          "image2" : "images/team/blank.png",
-          "image3" : "images/team/blank.png"
+          "image1" : "images/team/rose1.png",
+          "image2" : "images/team/rose2.png",
+          "image3" : "images/team/rose3.png"
         },
         { "title" : "Prof. Brian Fabien",
           "subTitle" : "Faculty Advisor",
