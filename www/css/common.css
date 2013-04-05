@@ -88,3 +88,7 @@ h2 {
     box-shadow: 0 0 8px #888888;
     position: relative;
 }
+
+a img {
+    border: none;
+}
