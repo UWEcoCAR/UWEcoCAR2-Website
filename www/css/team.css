@@ -1,13 +1,19 @@
 .portrait {
     position: absolute;
-    right: 0;
+    right:40px;
     bottom: 0;
-    margin: -40px -40px 0 40px;
 }
 
 .post:nth-child(2n) .portrait {
-    float:right;
-    margin: -40px 40px 0 40px;
+    left: 40px;
+}
+
+.post:nth-child(2n) .text {
+    margin-left: 40%;
+}
+
+.post {
+    min-height: 350px;
 }
 
 .post .text {
