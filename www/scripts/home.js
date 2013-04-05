@@ -1,4 +1,4 @@
-require(["jquery", "infinitescrolling", "interactivecar"], function() {
+require(["jquery", "infinitescrolling", "interactivecar", "common"], function() {
     $("<link/>").attr({
         href: "css/interactivecar.css",
         rel: "stylesheet"

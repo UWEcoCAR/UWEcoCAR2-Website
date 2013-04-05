@@ -1,6 +1,6 @@
 var postLoader;
 
-require(["jquery", "infinitescrolling"], function() {
+require(["jquery", "infinitescrolling", "common"], function() {
     var postTemplate = '<img class="{imageClass}" src="{image}" />{other}<div id="{id}" class="text"><h1 class="title">{title}</h1><h2 class="title">{subTitle}</h2><p>{subtext}</p><a role="button" class="more" index="{title}">Read More...</a></div>';
     postLoader = new PostLoader('projectPosts.json', $('#posts'), postTemplate, 'post');
     postLoader.autoload();

@@ -1,4 +1,4 @@
-require(["jquery", "infinitescrolling"], function() {
+require(["jquery", "infinitescrolling", "common"], function() {
     $("<link/>").attr({
         href: "css/sponsors.css",
         rel: 'stylesheet'
