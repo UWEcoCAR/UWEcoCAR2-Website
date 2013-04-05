@@ -1,16 +1,24 @@
 .portrait {
-    float:left;
-    margin: -40px -40px 0 40px;
+    position: absolute;
+    right:40px;
+    bottom: 0;
 }
 
 .post:nth-child(2n) .portrait {
-    float:right;
-    margin: -40px 40px 0 40px;
+    left: 40px;
+}
+
+.post:nth-child(2n) .text {
+    margin-left: 40%;
 }
 
 .post {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 350px;
+}
+
+.post .text {
+    width: 60%;
+    display: block;
 }
 
 #main {

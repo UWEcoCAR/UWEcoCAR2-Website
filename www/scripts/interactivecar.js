@@ -1,78 +1,21 @@
 $(document).ready(function(){
     $('#infoContainer').children().hide();
     $('#partInfoText').children().hide();
-
-
+    
     $('#interactivecar').hover(
         function() {
-            $('#closedCar').fadeOut();
+            $('#closedCar').fadeOut(100);
         },
         function () {
-            $('#closedCar').fadeIn();
+            $('#closedCar').fadeIn(100);
         }
     );
 
-    $('#batteryMap').hover(
+    $('#carMap > area').hover(
         function() {
-            partHover("#battery");
+            partHover($(this).attr("target"));
         }, function() {
-            partHoverEnd("#battery")
-        }
-    );
-
-    $('#engineMap').hover(
-        function() {
-            partHover("#engine");
-        }, function() {
-            partHoverEnd("#engine")
-        }
-    );
-
-    $('#gearboxMap').hover(
-        function() {
-            partHover("#gearbox");
-        }, function() {
-            partHoverEnd("#gearbox")
-        }
-    );
-
-    $('#inverterMap').hover(
-        function() {
-            partHover("#inverter");
-        }, function() {
-            partHoverEnd("#inverter")
-        }
-    );
-
-    $('#motorMap').hover(
-        function() {
-            partHover("#motor");
-        }, function() {
-            partHoverEnd("#motor")
-        }
-    );
-
-    $('#tankMap').hover(
-        function() {
-            partHover("#tank");
-        }, function() {
-            partHoverEnd("#tank")
-        }
-    );
-
-    $('#transMap').hover(
-        function() {
-            partHover("#trans");
-        }, function() {
-            partHoverEnd("#trans")
-        }
-    );
-
-    $('#ureaMap').hover(
-        function() {
-            partHover("#urea");
-        }, function() {
-            partHoverEnd("#urea")
+            partHoverEnd($(this).attr("target"))
         }
     );
 });
@@ -80,16 +23,16 @@ $(document).ready(function(){
 
 /*  Called when one of the defined map areas is hovered on
     Displays the highlighted image using the given
-    base id (eg #urea) */
+    base id (eg urea) */
 function partHover(backgroundStyle) {
-    $(backgroundStyle + "Info").fadeIn();
-    $(backgroundStyle + "InfoText").fadeIn();
+    $('#' + backgroundStyle).fadeIn(100);
+    $('#' + backgroundStyle + "InfoText").fadeIn(100);
 }
 
 
 /*  Called when one of the defined map areas is hovered off of
     hides all information pretaining to the previously hovered area */
 function partHoverEnd(backgroundStyle) {
-    $(backgroundStyle + "InfoText").fadeOut();
-    $(backgroundStyle + "Info").fadeOut();
+    $('#' + backgroundStyle).fadeOut(100);
+    $('#' + backgroundStyle + "InfoText").fadeOut(100);
 }
