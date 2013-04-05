@@ -85,7 +85,8 @@ $(document).scroll(loadIfNeeded);
 $(window).resize(loadIfNeeded);
 
 function loadIfNeeded(event) {
-    var scrolled = (window.scrollY + window.innerHeight) / $('body').height()
+    var scrollTop = (window.scrollY) || (document.documentElement.scrollTop) || (document.body.scrollTop)
+    var scrolled = (scrollTop + window.innerHeight) / $('body').height()
     if (scrolled > 1 && !postLoader.isLoading){
         postLoader.load(1);
     }
