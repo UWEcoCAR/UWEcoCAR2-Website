@@ -92,3 +92,7 @@ h2 {
 a img {
     border: none;
 }
+
+.hidden {
+    display: none;
+}

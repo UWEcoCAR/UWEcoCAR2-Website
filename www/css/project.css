@@ -10,12 +10,18 @@
 
 .cw {
     position: absolute;
+    transform: rotate(-29deg);
+    -o-transform: rotate(-29deg);
+    -moz-transform: rotate(-29deg);
     -webkit-transform: rotate(-29deg);
     -webkit-backface-visibility: hidden;
 }
 
 .ccw {
     position: absolute;
+    transform: rotate(61deg);
+    -o-transform: rotate(61deg);
+    -moz-transform: rotate(61deg);
     -webkit-transform: rotate(61deg);
     -webkit-backface-visibility: hidden;
 }
