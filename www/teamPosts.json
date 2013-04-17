@@ -44,9 +44,9 @@
           "subTitle" : "Business Manager",
           "text" : "Taj grew up in Seattle, and moved to Annapolis, MD to attend the United States Naval Academy where he was Captain of the basketball team and studied Information Technology Management. After graduation he was commissioned and served for 5 years as a Surface Warfare Officer in Virginia, Texas and Bahrain. He recently consulted with Microsoft's Windows Azure US marketing team for his Applied Strategy project, helping them develop go to market strategies with partner independent software vendor. Taj will return to Microsoft this summer as a Product Manager intern in the Server and Tools Business working with the Enterprise Client Team.",
           "subtext" : "Taj is a 2013 MBA, focusing on Marketing and Entrepreneurship. He currently holds leadership positions in both the Marketing Club and the Technology Business Club, is the Boys & Girls Club representative for Challenge for Charity and a Foster Board Fellow for the Rainier Vista Boys & Girls Club.",
-          "image1" : "images/team/blank.png",
-          "image2" : "images/team/blank.png",
-          "image3" : "images/team/blank.png"
+          "image1" : "images/team/mathews1.png",
+          "image2" : "images/team/mathews2.png",
+          "image3" : "images/team/mathews3.png"
         },
         { "title" : "Tyler Rose",
           "subTitle" : "Communications Manager",
@@ -56,6 +56,14 @@
           "image2" : "images/team/rose2.png",
           "image3" : "images/team/rose3.png"
         },
+        { "title" : "Mitchell Loeppky",
+            "subTitle" : "Center Stack Captain",
+            "text" : "In high school, Mitchell developed a passion for working on cars by working on his own 1992 Audi with his dad. He also discovered passions for building mechanical devices, and developing software doing FIRST robotics at Sehome High School. During his freshman orientation, Mitchell saw a presentation on the UW EcoCAR 2 team and joined the team because he saw it as a great way to further develop these passions.<br><br>Mitchell interned at Amazon.com as a software developer engineer, where he developed an internal tool for debugging customer behavior data. This summer he will be interning at Decisive Data, a software startup in Seattle.<br><br>Besides spending time coding in the lab, Mitchell enjoys cooking and baking (with Naniamo Bars being a favorite recipe), pwning n00bs at Super Smash Bros, skiing, and going on spontaneous adventures with his friends.",
+            "subtext" : "Mitchell is in his second year at UW and is studying Computer Engineering. He leads the Center Stack team, which is replacing the stock vehicle touch screen with a custom built and innovative interface.",
+            "image1" : "images/team/loeppky1.png",
+            "image2" : "images/team/loeppky2.png",
+            "image3" : "images/team/loeppky3.png"
+          },
         { "title" : "Prof. Brian Fabien",
           "subTitle" : "Faculty Advisor",
           "text" : "Professor Fabien joined the University of Washington in 1993, after teaching for three years at Ohio University. His research interests include the kinematics of mechanisms, dynamic system analysis and optimization, as well as control system design. In 1993, Professor Fabien received a Presidential Faculty Fellowship award from the National Science Foundation. He was also awarded a Fulbright Scholarship in 1997 to perform research and teaching at the University of the West Indies, Trinidad.<br><br>Professor Fabien is the Director of the Dynamic Systems Modeling and Controls Laboratory. He currently serves as Chair of the Faculty Council on Student Affairs. ",
