@@ -26,6 +26,7 @@
 #projectSection {
     width: auto;
 }
+
 .post {
     position: relative;
 }
@@ -35,7 +36,7 @@
     display: block;
 }
 
-.more {
+.media-site {
     margin-right: 20px;
 }
 
