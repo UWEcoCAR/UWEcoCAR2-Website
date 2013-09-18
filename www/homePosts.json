@@ -2,8 +2,9 @@
     "posts" : [
         "homePosts/teamSection.html",
         "homePosts/projectSection.html",
-        "homePosts/mediaSection.html",
+        "homePosts/microryzaSection.html",
         "homePosts/socialMediaSection.html",
+        "homePosts/mediaSection.html",
         "homePosts/sportsCarSection.html"
     ]
 }
