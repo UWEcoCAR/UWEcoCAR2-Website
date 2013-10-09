@@ -9,16 +9,6 @@
     margin-right: 5px;
 }
 
-.more {
-    color: #08c;
-    text-decoration: none;
-}
-
-.more:hover {
-    color: #0be;
-    cursor: pointer;
-}
-
 .post:nth-child(2n) .more{
     left: 0px;
     right: initial;

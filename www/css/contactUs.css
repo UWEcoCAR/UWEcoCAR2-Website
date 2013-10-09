@@ -1,0 +1,25 @@
+#main {
+    text-align: center;
+    min-height: 100%;
+}
+
+#main img {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    /*-ms-transform: rotate(-2deg);*/
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    margin: 40px;
+    border: 10px solid white;
+    box-shadow: 2px 2px 15px #888;
+    float: left;
+    width: 40%;
+}
+
+#textContainer {
+    margin-top: 60px;
+    float: left;
+    text-align: left;
+    margin-left: 40px;
+    width: 42%;
+}

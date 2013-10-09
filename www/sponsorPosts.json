@@ -6,7 +6,7 @@
       "image1" : "images/sponsorLogos/foster.png",
       "url1" : "http://www.foster.washington.edu/Pages/home.aspx",
       "title1" : "Foster School of Business",
-      "image2" : "http://www.nsf.gov/images/nsf_logo.png",
+      "image2" : "http://www.ecocar2.org/css/images/sponsors/nsf.jpg",
       "url2" : "http://www.nsf.gov/",
       "title2" : "National Science Foundation",
       "image3" : "http://www.engr.washington.edu/sites/default/files/imgs/COE_UW_CTR_purp_h100.jpg",
@@ -22,7 +22,7 @@
       "image2" : "images/sponsorLogos/amRacing.png",
       "url2" : "",
       "title2" : "AM Racing Inc",
-      "image3" : "http://www.me.washington.edu/banner.gif",
+      "image3" : "http://www.me.washington.edu/sites/all/themes/subcoe/img/ME_UW_purp.png",
       "url3" : "http://www.me.washington.edu/",
       "title3" : "UW College of Engineering",
       "image4" : "images/sponsorLogos/continental.png",
@@ -34,7 +34,10 @@
       "scope" : "Team",
       "image1" : "images/sponsorLogos/boeing.png",
       "url1" : "http://www.boeing.com/",
-      "title1" : "Boeing"
+      "title1" : "Boeing",
+      "image2" : "images/sponsorLogos/tov.png",
+      "url2" : "#",
+      "title2" : "TOV Capital Markets"
     },
         {
             "tier" : "Headline",
