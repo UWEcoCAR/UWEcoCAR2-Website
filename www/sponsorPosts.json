@@ -6,12 +6,15 @@
       "image1" : "images/sponsorLogos/foster.png",
       "url1" : "http://www.foster.washington.edu/Pages/home.aspx",
       "title1" : "Foster School of Business",
-      "image2" : "http://www.ecocar2.org/css/images/sponsors/nsf.jpg",
-      "url2" : "http://www.nsf.gov/",
-      "title2" : "National Science Foundation",
+      "image2" : "http://www.me.washington.edu/sites/all/themes/subcoe/img/ME_UW_purp.png",
+      "url2" : "http://www.me.washington.edu/",
+      "title2" : "UW College of Engineering",
       "image3" : "http://www.engr.washington.edu/sites/default/files/imgs/COE_UW_CTR_purp_h100.jpg",
       "url3" : "http://www.engr.washington.edu/",
-      "title3" : "College of Engineering"
+      "title3" : "College of Engineering",
+      "image4" : "images/sponsorLogos/genehaas.png",
+      "url4" : "http://ghaasfoundation.org/",
+      "title4" : "Gene Haas Foundation"
     },
     {
       "tier" : "Purple",
@@ -22,9 +25,9 @@
       "image2" : "images/sponsorLogos/amRacing.png",
       "url2" : "",
       "title2" : "AM Racing Inc",
-      "image3" : "http://www.me.washington.edu/sites/all/themes/subcoe/img/ME_UW_purp.png",
-      "url3" : "http://www.me.washington.edu/",
-      "title3" : "UW College of Engineering",
+      "image3" : "http://www.thegearworks.com/wp-content/themes/tgw/images/the-gear-works-logo.jpg",
+      "url3" : "http://www.thegearworks.com/",
+      "title3" : "The Gear Works",
       "image4" : "images/sponsorLogos/continental.png",
       "url4" : "http://www.continentaltire.com/www/tires_us_en/",
       "title4" : "Continental"
@@ -36,8 +39,11 @@
       "url1" : "http://www.boeing.com/",
       "title1" : "Boeing",
       "image2" : "images/sponsorLogos/tov.png",
-      "url2" : "#",
-      "title2" : "TOV Capital Markets"
+      "url2" : "http://tovcapitalusa.com",
+      "title2" : "TOV Capital Markets",
+      "image3" : "images/sponsorLogos/kvaser.png",
+      "url3" : "http://www.kvaser.com",
+      "title3" : "Kvaser"
     },
         {
             "tier" : "Headline",
